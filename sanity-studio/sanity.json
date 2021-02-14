@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "z983wj1d",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "lottamob"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "markdown",
+    "asset-source-unsplash"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
