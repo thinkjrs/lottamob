@@ -36,19 +36,6 @@ export default function Home() {
               </h2>
               <p className="text-blueGray-400 leading-relaxed">Hi. I'm Lotta Moberg. It's nice to meet you.</p>
             </div>
-            <div className="max-w-2xl mx-auto text-center">
-              <div className="flex flex-wrap">
-                <div className="flex flex-1 mb-4 mr-4 px-4 rounded bg-blueGray-50">
-                  <svg className="h-6 w-6 my-auto mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                  </svg>
-                  <input className="w-full py-4 text-xs placeholder-blueGray-400 font-semibold leading-none bg-blueGray-50 outline-none" type="email" placeholder="Type your e-mail to signup for my newsletter" />
-                </div>
-
-                <div className="w-full lg:w-auto"><a className="block w-full py-4 px-6 mb-2 lg:w-auto text-xs text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" href="#">Sign Up</a></div>
-              </div>
-            </div>
           </div>
           <div className="flex flex-wrap items-center justify-center max-w-4xl mx-auto pt-8 pb-4">
             <div className="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8"><img className="mx-auto" src="metis-assets/logos/brands/tesla.svg" alt="" /></div>
@@ -241,11 +228,6 @@ export default function Home() {
               <a className="inline-block mx-auto lg:ml-0 text-3xl font-semibold leading-none" href="#"><img src="images/bullseye-arrow-regular.svg" alt="Lotta" width="300" /></a>
               <div className="mt-12 mb-16 lg:my-24">
                 <p className="mb-4 text-xs text-blueGray-400 text-center lg:text-left">Subscribe to my newsletter and stay fully informed.</p>
-                <div className="flex flex-wrap lg:flex-nowrap items-center">
-                  <div className="flex w-full lg:w-2/3 mb-3 lg:mb-0 px-4 bg-blueGray-50 rounded">
-                    <svg className="h-6 w-6 my-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg><input className="w-full py-4 pl-3 text-xs text-blueGray-400 bg-blueGray-50 outline-none" type="text" placeholder="Type your e-mail" /></div>
-                  <button className="w-full lg:w-auto py-4 px-8 lg:ml-6 text-xs text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" type="submit">Sign Up</button>
-                </div>
               </div>
               <div className="hidden lg:block">
                 <p className="text-xs text-blueGray-400">&copy; 2021, Lotta Moberg, PhD, CFA. All rights reserved.</p>
