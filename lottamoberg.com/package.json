@@ -8,9 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sanity/block-content-to-react": "^2.0.7",
     "next": "10.0.6",
+    "next-sanity": "^0.1.12",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "sanity": "^2.2.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
