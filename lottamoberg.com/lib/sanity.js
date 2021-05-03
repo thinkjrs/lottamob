@@ -46,11 +46,57 @@ export const PortableText = createPortableTextComponent({
         <pre data-language={props.node.language}>
           <code>{props.node.code}</code>
         </pre>
-      )
+      ),
+      h1: 
     }
   },
 })
+/* BlockRender is a serializer for the sanity BlockContent component.
+ * It should be fed into the BlockContent component as ```{types: { block: BlockRenderer }}```.
+ */
+export const BlockRenderer = (props) => {
+  const setTailwindHeadingClass = (level) => {
+    let defaultClassStyles = '';
+    if (level == 1) {
+      return 'text-4xl' + defaultClassStyles;
+    }
+    if (level == 2) {
+      return 'text-3xl' + defaultClassStyles;
+    }
+    if (level == 3) {
+      return 'text-2xl' + defaultClassStyles;
+    }
+    if (level == 4) {
+      return 'text-xl' + defaultClassStyles;
+    }
+    if (level == 5) {
+      return 'text-md font-bold leading-tight' + defaultClassStyles;
+    }
+    if (level == 6) {
+      return 'text-md leading-none' + defaultClassStyles;
+    }
+    return '';
+  };
+  const {textStyle = 'normal'} = props.node;
 
+  if (/^h\d/.test(textStyle)) {
+    const level = textStyle.replace(/[^\d]/g, '');
+    return React.createElement(
+      textStyle,
+      {className: setTailwindHeadingClass(level)},
+      props.children
+    );
+  }
+
+  if (textStyle === 'blockquote') {
+    return <blockquote>- {props.children}</blockquote>;
+  }
+  if (textStyle === 'normal') {
+    return <p className="mb-2">{props.children}</p>;
+  }
+  // Fall back to default handling
+  return <span className="my-1">{props.children}</span>
+};
 // Set up the client for fetching data in the getProps page functions
 export const sanityClient = createClient(config)
 // Set up a preview client with serverless authentication for drafts
