@@ -30,28 +30,26 @@ const config = {
  * Set up a helper function for generating Image URLs with only the asset reference data in your documents.
  * Read more: https://www.sanity.io/docs/image-url
  **/
-export const urlFor = source => createImageUrlBuilder(config).image(source)
+export const urlForImage = source => createImageUrlBuilder(config).image(source)
 
 // Set up the live preview subscription hook
 export const usePreviewSubscription = createPreviewSubscriptionHook(config)
 
 // Set up Portable Text serialization
-export const PortableText = createPortableTextComponent({
-  ...config,
-  // Serializers passed to @sanity/block-content-to-react
-  // (https://github.com/sanity-io/block-content-to-react)
-  serializers: {
-    types: {
-      code: props => (
-        <pre data-language={props.node.language}>
-          <code>{props.node.code}</code>
-        </pre>
-      ),
-
-      block: BlockRenderer,
-    },
-  }
-})
+//export const PortableText = createPortableTextComponent({
+//  ...config,
+//  // Serializers passed to @sanity/block-content-to-react
+//  // (https://github.com/sanity-io/block-content-to-react)
+//  serializers: {
+//    types: {
+//      code: props => (
+//        <pre data-language={props.node.language}>
+//          <code>{props.node.code}</code>
+//        </pre>
+//      ),
+//    },
+//  }
+//})
 /* BlockRender is a serializer for the sanity BlockContent component.
  * It should be fed into the BlockContent component as ```{types: { block: BlockRenderer }}```.
  */
@@ -99,9 +97,9 @@ export const BlockRenderer = (props) => {
   return <span className="my-1">{props.children}</span>
 };
 // Set up the client for fetching data in the getProps page functions
-export const sanityClient = createClient(config)
+const sanityClient = createClient(config)
 // Set up a preview client with serverless authentication for drafts
-export const previewClient = createClient({
+const previewClient = createClient({
   ...config,
   useCdn: false,
   token: process.env.SANITY_API_TOKEN,
@@ -112,3 +110,5 @@ export const getClient = (usePreview) => (usePreview ? previewClient : sanityCli
 
 // Helper function for using the current logged in user account
 export const useCurrentUser = createCurrentUserHook(config)
+
+export {sanityClient, previewClient}
