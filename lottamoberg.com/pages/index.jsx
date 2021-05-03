@@ -131,7 +131,7 @@ export default function Home() {
                 <li className="mb-1">
                   <a
                     className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600"
-                    href="#"
+                    href="#research"
                   >
                     Research
                   </a>
@@ -139,7 +139,7 @@ export default function Home() {
                 <li className="mb-1">
                   <a
                     className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600"
-                    href="#"
+                    href="#blog"
                   >
                     Blog
                   </a>
@@ -147,7 +147,7 @@ export default function Home() {
                 <li className="mb-1">
                   <a
                     className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600"
-                    href="#"
+                    href="#about"
                   >
                     About
                   </a>
@@ -169,7 +169,7 @@ export default function Home() {
                 <span>Get in Touch</span>
                 <a
                   className="text-blue-600 hover:text-blue-600 underline"
-                  href="#"
+                  href="mailto:info@lottamoberg.com"
                 >
                   info@lottamoberg.com
                 </a>
@@ -188,7 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-20" id="about">
         <div className="container px-4 mx-auto">
           <div className="max-w-lg mx-auto mb-16 text-center">
             <h2 className="mt-4 mb-2 text-3xl lg:text-4xl font-bold font-heading">
@@ -214,7 +214,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/*<section className="py-12 md:py-20">
+      {/*<section className="py-12 md:py-20" id="research">
         <div className="container px-4 mx-auto">
           <div className="max-w-lg mx-auto mb-12 text-center">
             <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">
@@ -281,7 +281,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-20" id="blog">
         <div className="container px-4 mx-auto">
           <h2 className="mb-12 text-3xl lg:text-4xl font-bold font-heading text-center">
             Blog posts
@@ -540,7 +540,7 @@ export default function Home() {
               </a>
               <div className="mt-12 mb-16 lg:my-24">
                 <p className="mb-4 text-xs text-blueGray-400 text-center lg:text-left">
-                  Subscribe to my newsletter and stay fully informed.
+                  Return regularly to stay fully informed!
                 </p>
               </div>
               <div className="hidden lg:block">
