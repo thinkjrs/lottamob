@@ -46,14 +46,6 @@ export default function Home() {
               <li>
                 <a
                   className="text-sm text-blueGray-400 hover:text-blueGray-500"
-                  href="#talks"
-                >
-                  Talks
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-sm text-blueGray-400 hover:text-blueGray-500"
                   href="#research"
                 >
                   Research
@@ -136,14 +128,6 @@ export default function Home() {
             </div>
             <div>
               <ul>
-                <li className="mb-1">
-                  <a
-                    className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600"
-                    href="#"
-                  >
-                    Talks
-                  </a>
-                </li>
                 <li className="mb-1">
                   <a
                     className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600"
@@ -580,7 +564,7 @@ export default function Home() {
               <div className="flex flex-row flex-wrap justify-around mb-12">
                 <div className="w-1/2 lg:w-auto mb-12">
                   <h5 className="mb-6 text-lg font-bold font-heading">
-                    Talks &amp; Research
+                    Research
                   </h5>
                   <ul className="space-y-3">
                     <li>
