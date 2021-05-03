@@ -4,8 +4,11 @@ import CoverImage from '../Posts/CoverImage';
 import {parseISO, format} from 'date-fns';
 
 function PostDate({dateString}) {
-  const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, 'LLLL	d, yyyy')}</time>;
+  if (dateString & (dateString !== 'undefined')) {
+    const date = parseISO(dateString);
+    return <time dateTime={dateString}>{format(date, 'LLLL	       d, yyyy')}</time>;
+  }
+  return null
 }
 
 function PostTitle({children}) {
@@ -17,15 +20,18 @@ function PostTitle({children}) {
 }
 
 function PostBody({content}) {
-  return (
-    <div className="max-w-2xl mx-auto">
-      <BlockContent blocks={content} className="markdown" />
-    </div>
-  );
+  if (typeof content !== 'undefined') {
+    return (
+      <div className="max-w-2xl mx-auto">
+        <BlockContent blocks={content} className="markdown" />
+      </div>
+    );
+  }
+  return null
 }
 
-function PostHeader({title, coverImage, date}) {
-  if (!title || !coverImage || !date) return null;
+function PostHeader({title, coverImage}) {
+  if (!title || !coverImage) return null;
   return (
     <>
       <PostTitle>{title}</PostTitle>
@@ -34,7 +40,6 @@ function PostHeader({title, coverImage, date}) {
       </div>
       <div className="max-w-2xl mx-auto">
         <div className="mb-6 text-lg text-black">
-          <PostDate dateString={date} />
         </div>
       </div>
     </>
