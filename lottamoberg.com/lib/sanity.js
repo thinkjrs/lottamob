@@ -47,9 +47,10 @@ export const PortableText = createPortableTextComponent({
           <code>{props.node.code}</code>
         </pre>
       ),
-      h1: 
-    }
-  },
+
+      block: BlockRenderer,
+    },
+  }
 })
 /* BlockRender is a serializer for the sanity BlockContent component.
  * It should be fed into the BlockContent component as ```{types: { block: BlockRenderer }}```.

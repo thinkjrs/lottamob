@@ -221,7 +221,8 @@ export default function Home() {
                 'I am a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair in Chicago.'
               }
             </p>
-            <p classname="text-blueGray-400 leading-loose">
+            <br />
+            <p className="text-blueGray-400 leading-loose">
               {
                 'On a daily basis, I explore how policies, politics, and institutional developments affect economies of countries around the world. I sit on the Board of Trustees of the CFA Institute Research Foundation and am co-chair of the Education Advisory Group of CFA Society Chicago. '
               }
