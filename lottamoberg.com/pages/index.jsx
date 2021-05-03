@@ -6,18 +6,20 @@ export default function Home() {
     <div className="">
       <section className="relative overflow-x-hidden">
         <div className="hidden md:block absolute top-0 left-0 mt-32 -ml-32 lg:-ml-24">
-          <img
+          {/*<img
             className="h-64 lg:h-80"
             src="metis-assets/illustrations/walk-dog.png"
             alt=""
-          />
+          />*/}
         </div>
         <div className="hidden md:block absolute top-0 right-0 mt-32 -mr-32 lg:-mr-16">
+          {/*
           <img
             className="h-64 lg:h-80"
             src="metis-assets/illustrations/phone-online-shopping.png"
             alt=""
           />
+          */}
         </div>
         <div className="container px-4 mx-auto">
           <nav className="flex justify-between items-center py-6">
@@ -87,16 +89,15 @@ export default function Home() {
           </nav>
           <div className="mt-12 mb-12">
             <div className="max-w-lg mx-auto mb-8 text-center">
-              <span className="inline-block px-3 py-2 text-xs font-semibold bg-blue-50 text-blue-500 rounded-full uppercase">
-                Critical analysis
-              </span>
+
               <h2 className="text-3xl md:text-4xl mt-4 mb-4 font-bold font-heading">
-                <span>Global, in-depth </span>
-                <span className="text-blue-600">{` economic analysis `}</span>
-                <span>driving thought leadership.</span>
+                <span>Financial analysis through an Austrian economists' </span>
+                <span className="text-blue-600">{` perspective.`}</span>
               </h2>
               <p className="text-blueGray-400 leading-relaxed">
-                Hi. I'm Lotta Moberg. It's nice to meet you.
+                Hi. I'm Lotta Moberg, PhD, CFA.</p>
+              <p className="text-gray-900 text-xs">
+                Thanks for visiting!
               </p>
             </div>
           </div>
@@ -206,31 +207,30 @@ export default function Home() {
       <section className="py-20">
         <div className="container px-4 mx-auto">
           <div className="max-w-lg mx-auto mb-16 text-center">
-            <span className="inline-block px-3 py-2 text-xs font-semibold bg-blue-100 text-blue-600 rounded-full uppercase">
-              an Alternative perspective
-            </span>
             <h2 className="mt-4 mb-2 text-3xl lg:text-4xl font-bold font-heading">
               <span>
-                I synthesize global economics, politics, and policy. I{' '}
+                I synthesize global economics, politics, and policy. My{' '}
               </span>
-              <span className="text-blue-600">{` communicate `}</span>
-              <span>to disrupt the intellectual status quo.</span>
+              <span className="text-blue-600">{` research `}</span>
+              <span>aims to disrupt the intellectual status quo.</span>
             </h2>
             <p className="text-blueGray-400 leading-loose">
               {
-                'I am a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair in Chicago.'
+                'I am a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.'
               }
             </p>
-            <p classname="text-blueGray-400 leading-loose">
+            <br />
+
+            <p className="text-blueGray-400 leading-loose">
               {
-                'On a daily basis, I explore how policies, politics, and institutional developments affect economies of countries around the world. I sit on the Board of Trustees of the CFA Institute Research Foundation and am co-chair of the Education Advisory Group of CFA Society Chicago. '
+                'I study how policies, politics, and institutional developments affect economies of countries around the world. I sit on the Board of Trustees of the CFA Institute Research Foundation and am co-chair of the Education Advisory Group of CFA Society Chicago. '
               }
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-12 md:py-20">
+      {/*<section className="py-12 md:py-20">
         <div className="container px-4 mx-auto">
           <div className="max-w-lg mx-auto mb-12 text-center">
             <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">
@@ -537,7 +537,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       <section className="relative">
         <div className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-50"></div>
@@ -648,26 +648,8 @@ export default function Home() {
                 </div>
                 <div className="w-full lg:w-auto mb-4">
                   <h5 className="mb-6 text-lg font-bold font-heading">
-                    whoami
+                    About
                   </h5>
-                  <ul className="space-y-3">
-                    <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="#"
-                      >
-                        First Link
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="#"
-                      >
-                        Second Link
-                      </a>
-                    </li>
-                  </ul>
                 </div>
               </div>
               <div className="lg:hidden text-center">
