@@ -7,11 +7,14 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // We import object and document schemas
 import post from './post'
 import article from './article'
+import research from './research'
+
 
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
     post,
     article,
+    research,
   ]),
 })
