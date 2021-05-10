@@ -19,14 +19,14 @@ const postFields = `
   date,
   excerpt,
   'slug': slug.current,
-  'coverImage': coverImage.asset,
+  'mainImage': coverImage.asset,
 `;
 
 const getClient = (preview) => (preview ? previewClient : sanityClient);
 
-export async function getPreviewPostBySlug(slug) {
+export async function getPreviewPostBySlug(slug, postName = 'post') {
   const data = await getClient(true).fetch(
-    `*[_type == "post" && slug.current == $slug] | order(date desc){
+    `*[_type == ${postName} && slug.current == $slug] | order(date desc){
       ${postFields}
       content
     }`,
@@ -35,26 +35,26 @@ export async function getPreviewPostBySlug(slug) {
   return data[0];
 }
 
-export async function getAllPostsWithSlug() {
-  const data = await sanityClient.fetch(`*[_type == "post"]{ 'slug': slug.current }`);
+export async function getAllPostsWithSlug(postName = 'post') {
+  const data = await sanityClient.fetch(`*[_type == ${postName}]{ 'slug': slug.current }`);
   return data;
 }
 
-export async function getAllPostsForHome(preview) {
+export async function getAllPostsForHome(preview, postName = 'post') {
   const results = await getClient(preview).fetch(
-    `*[_type == "post"] | order(date desc, _updatedAt desc){
+    `*[_type == ${postName}] | order(date desc, _updatedAt desc){
       ${postFields}
     }`
   );
   return getUniquePosts(results);
 }
 
-export async function getPostAndMorePosts(slug, preview) {
+export async function getPostAndMorePosts(slug, preview, postName = 'post') {
   const curClient = getClient(preview);
   const [post, morePosts] = await Promise.all([
     curClient
       .fetch(
-        `*[_type == "post" && slug.current == $slug] | order(_updatedAt desc) {
+        `*[_type == ${postName} && slug.current == $slug] | order(_updatedAt desc) {
         ${postFields}
         content,
       }`,
@@ -62,7 +62,7 @@ export async function getPostAndMorePosts(slug, preview) {
       )
       .then((res) => res?.[0]),
     curClient.fetch(
-      `*[_type == "post" && slug.current != $slug] | order(date desc, _updatedAt desc){
+      `*[_type == ${postName} && slug.current != $slug] | order(date desc, _updatedAt desc){
         ${postFields}
         content,
       }[0...2]`,
