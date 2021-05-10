@@ -88,7 +88,7 @@ export const BlockRenderer = (props) => {
   }
 
   if (textStyle === 'blockquote') {
-    return <blockquote>- {props.children}</blockquote>;
+    return <blockquote>-{props.children}</blockquote>;
   }
   if (textStyle === 'normal') {
     return <p className="mb-2">{props.children}</p>;
