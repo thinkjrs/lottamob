@@ -1,6 +1,6 @@
 export default {
-  name: 'article',
-  title: 'Article',
+  name: 'post',
+  title: 'Post',
   type: 'document',
   description: 'A blog post that lives on the /blog portion of the site.',
   fields: [
