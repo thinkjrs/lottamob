@@ -1,11 +1,11 @@
 {
   "root": true,
+  "project": {
+    "name": "lottamob"
+  },
   "api": {
     "projectId": "6zq2ow72",
     "dataset": "production"
-  },
-  "project": {
-    "name": "lottamob"
   },
   "plugins": [
     "@sanity/base",
