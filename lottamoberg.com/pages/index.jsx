@@ -46,7 +46,7 @@ export default function Home() {
               <li>
                 <a
                   className="text-sm text-blueGray-400 hover:text-blueGray-500"
-                  href="#research"
+                  href="/research"
                 >
                   Research
                 </a>
@@ -54,7 +54,7 @@ export default function Home() {
               <li>
                 <a
                   className="text-sm text-blueGray-400 hover:text-blueGray-500"
-                  href="#blog"
+                  href="/blog"
                 >
                   Blog
                 </a>
@@ -62,9 +62,9 @@ export default function Home() {
               <li>
                 <a
                   className="text-sm text-blueGray-400 hover:text-blueGray-500"
-                  href="#who-is-lotta-moberg"
+                  href="/articles"
                 >
-                  About
+                  Articles
                 </a>
               </li>
             </ul>
