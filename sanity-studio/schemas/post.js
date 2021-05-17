@@ -2,6 +2,7 @@ export default {
   name: 'post',
   title: 'Post',
   type: 'document',
+  description: 'A blog post that lives on the /blog portion of the site.',
   fields: [
     {
       name: 'title',
@@ -26,14 +27,23 @@ export default {
       },
     },
     {
-      name: 'publishedAt',
-      title: 'Published at',
+      name: 'date',
+      title: 'Published at datetime',
       type: 'datetime',
     },
     {
       name: 'body',
       title: 'Body',
       type: 'markdown',
+    },
+    {
+      name: 'excerpt',
+      title: 'Post excerpt for the article preview.',
+      type: 'string',
+      options: {
+        source: 'excerpt',
+        maxLength: 180,
+      }
     },
   ],
   preview: {
