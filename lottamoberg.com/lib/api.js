@@ -14,21 +14,21 @@ const getUniquePosts = (posts) => {
 };
 
 const postFields = `
-  name,
   title,
   date,
   excerpt,
+  body,
   'slug': slug.current,
-  'mainImage': coverImage.asset,
+  'mainImage': mainImage.asset,
 `;
 
 const getClient = (preview) => (preview ? previewClient : sanityClient);
 
 export async function getPreviewPostBySlug(slug, postName = 'post') {
   const data = await getClient(true).fetch(
-    `*[_type == ${postName} && slug.current == $slug] | order(date desc){
+    `*[_type == '${postName}' && slug.current == $slug] | order(date desc){
       ${postFields}
-      content
+      body 
     }`,
     {slug}
   );
@@ -36,38 +36,60 @@ export async function getPreviewPostBySlug(slug, postName = 'post') {
 }
 
 export async function getAllPostsWithSlug(postName = 'post') {
-  const data = await sanityClient.fetch(`*[_type == ${postName}]{ 'slug': slug.current }`);
+  const data = await sanityClient.fetch(`*[_type == '${postName}']{ 'slug': slug.current }`);
   return data;
 }
 
 export async function getAllPostsForHome(preview, postName = 'post') {
   const results = await getClient(preview).fetch(
-    `*[_type == ${postName}] | order(date desc, _updatedAt desc){
+    `*[_type == '${postName}'] | order(date desc) {
       ${postFields}
     }`
   );
   return getUniquePosts(results);
 }
-
+export async function getAllPostsForHome2(preview, postName = 'post') {
+  const results = await getClient(preview).fetch(
+    `*[_type == '${postName}'] order(date desc, _updatedAt desc) {
+      ${postFields}
+    }`
+  );
+  return results;
+}
 export async function getPostAndMorePosts(slug, preview, postName = 'post') {
   const curClient = getClient(preview);
   const [post, morePosts] = await Promise.all([
     curClient
       .fetch(
-        `*[_type == ${postName} && slug.current == $slug] | order(_updatedAt desc) {
+        `*[_type == '${postName}' && slug.current == $slug] | order(_updatedAt desc) {
         ${postFields}
-        content,
+        body,
       }`,
         {slug}
       )
       .then((res) => res?.[0]),
     curClient.fetch(
-      `*[_type == ${postName} && slug.current != $slug] | order(date desc, _updatedAt desc){
+      `*[_type == '${postName}' && slug.current != $slug] | order(date desc, _updatedAt desc){
         ${postFields}
-        content,
+        body,
       }[0...2]`,
       {slug}
     ),
   ]);
   return {post, morePosts: getUniquePosts(morePosts)};
+}
+
+export async function getSanityQuery(preview, postName = 'post') {
+  const query = `*[_type == '${postName}'] | order(date desc, _updatedAt desc) {
+      ${postFields}
+}`
+  console.log(`Query: ${query}`);
+  const params = {}
+
+  const curClient = getClient(preview);
+  curClient.fetch(query, params).then((post) => {
+    post.forEach((post) => {
+      console.log(`${post.title}: ${post.excerpt}`)
+    })
+  })
 }
