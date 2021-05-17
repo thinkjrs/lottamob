@@ -22,6 +22,7 @@ export default function BlogPage({allPosts, }) {
             date={heroPost.date}
             slug={heroPost.slug}
             excerpt={heroPost.excerpt}
+            postTypePath='articles'
           />
         )}
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
@@ -31,9 +32,8 @@ export default function BlogPage({allPosts, }) {
 }
 
 export async function getStaticProps({preview = false}) {
-  /* Blog Content */
-  const allPosts = await getAllPostsForHome(preview, 'post');
-  //const allPosts = await getAllPostsWithSlug('post');
+  /* Article Content */
+  const allPosts = await getAllPostsForHome(preview, 'article');
   console.log(preview)
   return {
     props: {
