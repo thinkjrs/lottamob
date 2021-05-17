@@ -27,7 +27,9 @@
     "sanity-plugin-asset-source-unsplash": "^0.1.3",
     "sanity-plugin-markdown": "^2.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@sanity/cli": "^2.10.0"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:sanity-io/sanity-nextjs-vercel-example"
