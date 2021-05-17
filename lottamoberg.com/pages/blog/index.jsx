@@ -1,13 +1,14 @@
 import Intro from '../../components/Intro/Intro';
 import HeroPost from '../../components/Posts/HeroPost';
 import MoreStories from '../../components/Posts/MoreStories';
-import {getAllPostsForHome, } from '../../lib/api';
+import {getAllPostsForHome} from '../../lib/api';
 
 
 export default function BlogPage({allPosts, }) {
   if (!allPosts) return null;
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
+  console.log(JSON.stringify(allPosts));
   return (
     <>
       <div className="pt-24" />
@@ -17,7 +18,7 @@ export default function BlogPage({allPosts, }) {
         {heroPost && (
           <HeroPost
             title={heroPost.title}
-            coverImage={heroPost.coverImage}
+            coverImage={heroPost.mainImage}
             date={heroPost.date}
             slug={heroPost.slug}
             excerpt={heroPost.excerpt}
@@ -31,7 +32,9 @@ export default function BlogPage({allPosts, }) {
 
 export async function getStaticProps({preview = false}) {
   /* Blog Content */
-  const allPosts = await getAllPostsForHome(preview);
+  const allPosts = await getAllPostsForHome(preview, 'post');
+  //const allPosts = await getAllPostsWithSlug('post');
+  console.log(preview)
   return {
     props: {
       allPosts: allPosts,
