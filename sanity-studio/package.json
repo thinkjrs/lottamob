@@ -1,11 +1,11 @@
 {
   "name": "lottamob",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "package.json",
   "author": "Jason R. Stevens, CFA <jason@thinkjrs.dev>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "start": "sanity start",
     "build": "sanity build"
@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:sanity-io/sanity-nextjs-vercel-example"
+    "url": "git@github.com:thinkjrs/lottamob"
   }
 }
