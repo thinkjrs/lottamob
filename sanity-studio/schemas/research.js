@@ -1,8 +1,8 @@
 export default {
-  name: 'article',
-  title: 'Article',
+  name: 'research',
+  title: 'Research article',
   type: 'document',
-  description: 'A news, media, or other non-blog, non-research post. Lives on the /article portion of the site.',
+  description: 'A research writing or article posting for the site. This should include only those pieces that should live the /research section of the site.',
   fields: [
     {
       name: 'title',
