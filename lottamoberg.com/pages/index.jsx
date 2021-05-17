@@ -564,76 +564,47 @@ export default function Home() {
               <div className="flex flex-row flex-wrap justify-around mb-12">
                 <div className="w-1/2 lg:w-auto mb-12">
                   <h5 className="mb-6 text-lg font-bold font-heading">
-                    Research
+                    Academic research
                   </h5>
                   <ul className="space-y-3">
                     <li>
                       <a
                         className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="#"
+                        href="/research"
                       >
-                        First Link
+                        Research
                       </a>
                     </li>
-                    <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="#"
-                      >
-                        Second Link
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="#"
-                      >
-                        Third Link
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="#"
-                      >
-                        Fourth Link
-                      </a>
-                    </li>
+
                   </ul>
                 </div>
                 <div className="w-1/2 lg:w-auto mb-12">
-                  <h5 className="mb-6 text-lg font-bold font-heading">Blog</h5>
+                  <h5 className="mb-6 text-lg font-bold font-heading">Informal blog</h5>
                   <ul className="space-y-3">
                     <li>
                       <a
                         className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="#"
+                        href="/blog"
                       >
-                        First Link
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="#"
-                      >
-                        Second Link
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="#"
-                      >
-                        Third Link
+                        posts
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div className="w-full lg:w-auto mb-4">
                   <h5 className="mb-6 text-lg font-bold font-heading">
-                    About
+                    News and other articles
                   </h5>
+                  <ul className="space-y-3">
+                    <li>
+                      <a
+                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
+                        href="/articles"
+                      >
+                        Longer pieces
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
               <div className="lg:hidden text-center">
