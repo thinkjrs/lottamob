@@ -1,7 +1,12 @@
 import React from 'react';
-import BlockContent from '@sanity/block-content-to-react';
 import CoverImage from '../Posts/CoverImage';
 import {parseISO, format} from 'date-fns';
+import ReactMarkdown from 'react-markdown';
+
+function HeadingRenderer(props) {
+  const Heading = Markdown.renderers.heading
+  return <Heading {...props} />
+}
 
 function PostDate({dateString}) {
   if (dateString & (dateString !== 'undefined')) {
@@ -21,9 +26,10 @@ function PostTitle({children}) {
 
 function PostBody({content}) {
   if (typeof content !== 'undefined') {
+    console.log(`DEBUG PostBody: ${content}`)
     return (
       <div className="max-w-2xl mx-auto">
-        <BlockContent blocks={content} className="markdown" />
+        <ReactMarkdown children={content} components={{heading: HeadingRenderer}} />
       </div>
     );
   }

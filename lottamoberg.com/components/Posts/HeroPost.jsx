@@ -15,9 +15,9 @@ export default function HeroPost({
       <div className="mb-8 md:mb-16">
         <CoverImage slug={slug} title={title} url={coverImage} postTypePath={postTypePath} />
       </div>
-      <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
+      <div className="md:grid md:grid-cols-1 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
         <div >
-          <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
+          {/*<h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
             <Link
               as={`/${postTypePath}/${slug}`}
               href={`/${postTypePath}/[slug]`}>
@@ -25,7 +25,7 @@ export default function HeroPost({
                 {title}
               </a>
             </Link>
-          </h3>
+          </h3>*/}
           <div className="mb-4 md:mb-0 text-lg">
             <PostDate dateString={date} />
           </div>
