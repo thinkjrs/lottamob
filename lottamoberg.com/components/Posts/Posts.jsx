@@ -1,13 +1,19 @@
 import React from 'react';
 import CoverImage from '../Posts/CoverImage';
 import {parseISO, format} from 'date-fns';
-import ReactMarkdown from 'react-markdown';
+import Markdown from 'markdown-to-jsx';
 
+/*
 function HeadingRenderer(props) {
+  if (props.level == 1) {
+    return <h1>{props.children}</h1>;
+  }
   const Heading = Markdown.renderers.heading
   return <Heading {...props} />
+}*/
+function HeadingRenderer(props) {
+  return createElement(`h${props.level}`, props.children, className = "text-2xl");
 }
-
 function PostDate({dateString}) {
   if (dateString & (dateString !== 'undefined')) {
     const date = parseISO(dateString);
@@ -26,10 +32,9 @@ function PostTitle({children}) {
 
 function PostBody({content}) {
   if (typeof content !== 'undefined') {
-    console.log(`DEBUG PostBody: ${content}`)
     return (
       <div className="max-w-2xl mx-auto">
-        <ReactMarkdown children={content} components={{heading: HeadingRenderer}} />
+        <Markdown className="prose" children={content} />
       </div>
     );
   }
