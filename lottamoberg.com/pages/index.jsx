@@ -1,6 +1,35 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import {useState} from 'react';
 
+function NavLinks() {
+  return (
+    <ul className="flex items-center w-auto m-auto space-x-12">
+      <li>
+        <a
+          className="text-sm text-blueGray-400 hover:text-blueGray-500"
+          href="/research"
+        >
+          Research
+        </a>
+      </li>
+      <li>
+        <a
+          className="text-sm text-blueGray-400 hover:text-blueGray-500"
+          href="/blog"
+        >
+          Blog
+        </a>
+      </li>
+      <li>
+        <a
+          className="text-sm text-blueGray-400 hover:text-blueGray-500"
+          href="/articles"
+        >
+          Articles
+        </a>
+      </li>
+    </ul>
+  );
+}
 export default function Home() {
   return (
     <div className="">
@@ -25,49 +54,13 @@ export default function Home() {
           <nav className="flex justify-between items-center py-6">
             <a className="text-3xl font-semibold leading-none" href="#">
               <img
+                className="rounded-full"
                 src="images/bullseye-arrow-regular.svg"
                 alt="Lotta Moberg"
                 width="49"
               />
             </a>
-            <div className="lg:hidden">
-              <button className="navbar-burger flex items-center py-2 px-3 text-blue-600 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300">
-                <svg
-                  className="fill-current h-4 w-4"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Mobile menu</title>
-                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-              </button>
-            </div>
-            <ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-              <li>
-                <a
-                  className="text-sm text-blueGray-400 hover:text-blueGray-500"
-                  href="/research"
-                >
-                  Research
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-sm text-blueGray-400 hover:text-blueGray-500"
-                  href="/blog"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-sm text-blueGray-400 hover:text-blueGray-500"
-                  href="/articles"
-                >
-                  Articles
-                </a>
-              </li>
-            </ul>
+            <NavLinks />
             <div className="hidden lg:block">
               <a
                 className="hidden mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded"
@@ -91,104 +84,21 @@ export default function Home() {
               <p className="text-gray-900 text-xs">
                 Thanks for visiting!
               </p>
+              <div className="inline-block mx-auto mt-12 mb-0">
+                <img
+                  className="rounded-full"
+                  src="images/lotta-moberg-phd-cfa.png"
+                  alt="Lotta Moberg, PhD, CFA"
+                  width="300"
+                />
+              </div>
             </div>
           </div>
           <div className="flex flex-wrap items-center justify-center max-w-4xl mx-auto pt-8 pb-4"></div>
         </div>
-        <div className="hidden navbar-menu relative z-50">
-          <div className="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
-          <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-            <div className="flex items-center mb-8">
-              <a
-                className="mr-auto text-3xl font-semibold leading-none"
-                href="#"
-              >
-                <img
-                  src="images/bullseye-arrow-regular.svg"
-                  alt="Lotta Moberg"
-                  width="49"
-                />
-              </a>
-              <button className="navbar-close">
-                <svg
-                  className="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div>
-              <ul>
-                <li className="mb-1">
-                  <a
-                    className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600"
-                    href="#research"
-                  >
-                    Research
-                  </a>
-                </li>
-                <li className="mb-1">
-                  <a
-                    className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600"
-                    href="#blog"
-                  >
-                    Blog
-                  </a>
-                </li>
-                <li className="mb-1">
-                  <a
-                    className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600"
-                    href="#about"
-                  >
-                    About
-                  </a>
-                </li>
-              </ul>
-              <div className="mt-4 pt-6 border-t border-blueGray-100">
-                <a
-                  className="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded"
-                  href="#"
-                ></a>
-                <a
-                  className="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded"
-                  href="#"
-                ></a>
-              </div>
-            </div>
-            <div className="mt-auto">
-              <p className="my-4 text-xs text-blueGray-400">
-                <span>Get in Touch</span>
-                <a
-                  className="text-blue-600 hover:text-blue-600 underline"
-                  href="mailto:info@lottamoberg.com"
-                >
-                  info@lottamoberg.com
-                </a>
-              </p>
-              <a className="inline-block px-1" href="#">
-                <img src="metis-assets/icons/facebook-blue.svg" alt="" />
-              </a>
-              <a className="inline-block px-1" href="#">
-                <img src="metis-assets/icons/twitter-blue.svg" alt="" />
-              </a>
-              <a className="inline-block px-1" href="#">
-                <img src="metis-assets/icons/instagram-blue.svg" alt="" />
-              </a>
-            </div>
-          </nav>
-        </div>
       </section>
 
-      <section className="py-20" id="about">
+      <section className="py-4 lg:py-12" id="about">
         <div className="container px-4 mx-auto">
           <div className="max-w-lg mx-auto mb-16 text-center">
             <h2 className="mt-4 mb-2 text-3xl lg:text-4xl font-bold font-heading">
