@@ -1009,7 +1009,6 @@
 "@sanity/cli@^2.10.0":
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-2.10.0.tgz#f1ea041e112d83af8c00bd678f5f9d29e1d4e7a4"
-  integrity sha512-yXhRtEjwz9MmewRWy6/nR1WWkx5bf5Cb2FCBlwxS6VHexfxf4SxE+MfFOLqoEUqzoXbOL6mDEq+zCg8yqP7bnw==
 
 "@sanity/client@2.8.0":
   version "2.8.0"
@@ -7016,7 +7015,7 @@ react-markdown@^5.0.3:
     unist-util-visit "^2.0.0"
     xtend "^4.0.1"
 
-react-mde@^11.0.6:
+react-mde@^11.5.0:
   version "11.5.0"
   resolved "https://registry.npmjs.org/react-mde/-/react-mde-11.5.0.tgz#3e81a505071aa80287fb23a1c0ce5e8b34c82055"
 
@@ -7475,12 +7474,12 @@ sanity-plugin-asset-source-unsplash@^0.1.3:
   dependencies:
     react-photo-gallery "^8.0.0"
 
-sanity-plugin-markdown@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/sanity-plugin-markdown/-/sanity-plugin-markdown-2.0.1.tgz#198abba730c0d26aefcd3d40e58aa46f35d75878"
+sanity-plugin-markdown@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/sanity-plugin-markdown/-/sanity-plugin-markdown-2.0.2.tgz#164451215412ae3f21ca4032087e979b01de6ad0"
   dependencies:
     react-markdown "^5.0.3"
-    react-mde "^11.0.6"
+    react-mde "^11.5.0"
     remark-gfm "^1.0.0"
 
 sax@~1.2.4:

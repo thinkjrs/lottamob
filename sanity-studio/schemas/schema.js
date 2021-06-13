@@ -9,6 +9,11 @@ import post from './post'
 import article from './article'
 import research from './research'
 
+const markdownType = {
+  name: 'body',
+  title: 'Body',
+  type: 'markdown',
+}
 
 export default createSchema({
   name: 'default',
@@ -16,5 +21,6 @@ export default createSchema({
     post,
     article,
     research,
+    markdownType,
   ]),
 })
