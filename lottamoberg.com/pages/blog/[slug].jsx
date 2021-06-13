@@ -29,7 +29,7 @@ function ArticleMetaOG({post, ogUrl}) {
   );
 }
 export default function BlogPost({post, morePosts, preview}) {
-  const coverImage = post?.coverImage;
+  const coverImage = post?.mainImage;
   return (
 
     <>
@@ -39,10 +39,10 @@ export default function BlogPost({post, morePosts, preview}) {
           <ArticleMetaOG post={post} ogUrl="/" />
           <PostHeader
             title={post?.title}
-            coverImage={post?.coverImage}
+            coverImage={post?.mainImage}
             date={post?.date}
           />
-          <PostBody content={post?.content} />
+          <PostBody content={post?.body} />
         </article>
         <SectionSeparator />{' '}
         {morePosts?.length > 0 && <MoreStories posts={morePosts} />}
