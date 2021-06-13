@@ -51,7 +51,7 @@ export const usePreviewSubscription = createPreviewSubscriptionHook(config)
 //    },
 //  }
 //})
-/* BlockRender is a serializer for the sanity BlockContent component.
+/* BlockRenderer is a serializer for the sanity BlockContent component.
  * It should be fed into the BlockContent component as ```{types: { block: BlockRenderer }}```.
  */
 export const BlockRenderer = (props) => {
@@ -97,6 +97,8 @@ export const BlockRenderer = (props) => {
   // Fall back to default handling
   return <span className="my-1">{props.children}</span>
 };
+
+
 // Set up the client for fetching data in the getProps page functions
 const sanityClient = createClient(config)
 // Set up a preview client with serverless authentication for drafts
