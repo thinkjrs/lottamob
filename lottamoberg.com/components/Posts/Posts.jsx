@@ -1,6 +1,7 @@
+/* eslint-disable */
 import React from 'react';
 import CoverImage from '../Posts/CoverImage';
-import { parseISO, format } from 'date-fns';
+import {parseISO, format} from 'date-fns';
 import Markdown from 'markdown-to-jsx';
 
 /*
@@ -18,7 +19,7 @@ function HeadingRenderer(props) {
     (className = 'text-2xl'),
   );
 }
-function PostDate({ dateString }) {
+function PostDate({dateString}) {
   if (dateString & (dateString !== 'undefined')) {
     const date = parseISO(dateString);
     return (
@@ -28,7 +29,7 @@ function PostDate({ dateString }) {
   return null;
 }
 
-function PostTitle({ children }) {
+function PostTitle({children}) {
   return (
     <h1 className="pt-24 text-6xl text-black md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
       {children}
@@ -36,7 +37,7 @@ function PostTitle({ children }) {
   );
 }
 
-function PostBody({ content }) {
+function PostBody({content}) {
   if (typeof content !== 'undefined') {
     return (
       <div className="max-w-2xl mx-auto">
@@ -47,7 +48,7 @@ function PostBody({ content }) {
   return null;
 }
 
-function PostHeader({ title, coverImage, postName = 'blog' }) {
+function PostHeader({title, coverImage, postName = 'blog'}) {
   if (!title || !coverImage) return null;
   return (
     <>
@@ -62,4 +63,4 @@ function PostHeader({ title, coverImage, postName = 'blog' }) {
   );
 }
 
-export { PostTitle, PostBody, PostHeader, PostDate };
+export {PostTitle, PostBody, PostHeader, PostDate};

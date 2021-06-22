@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 function NavLinks() {
   return (
     <ul className="flex items-center w-auto m-auto space-x-12">
