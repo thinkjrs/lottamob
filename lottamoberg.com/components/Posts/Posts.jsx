@@ -41,13 +41,13 @@ function PostBody({content}) {
   return null
 }
 
-function PostHeader({title, coverImage}) {
+function PostHeader({title, coverImage, postName = "blog"}) {
   if (!title || !coverImage) return null;
   return (
     <>
       <PostTitle>{title}</PostTitle>
       <div className="mb-8 md:mb-16 -mx-5 sm:mx-0">
-        <CoverImage title={title} url={coverImage} />
+        <CoverImage title={title} url={coverImage} postTypePath={postName} />
       </div>
       <div className="max-w-2xl mx-auto">
         <div className="mb-6 text-lg text-black">
