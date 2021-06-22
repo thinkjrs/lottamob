@@ -13,22 +13,14 @@ function Image({src, title, },) {
   );
 }
 export default function CoverImage({title, url, slug, postTypePath = 'blog'}) {
-  const imgLink = slug ? `/${postTypePath}/${slug}` : `/${slug}`;
+  const imgLink = `/${postTypePath}/${slug}`
   return (
     <div className="-mx-5 sm:mx-0">
-      {slug ? (
-        <Link as={imgLink} href={`/${postTypePath}/[slug]`}>
-          <a aria-label={title} href={imgLink}>
-            <Image src={url} title={title} />
-          </a>
-        </Link>
-      ) : (
-        <Link as={imgLink} href={`/${postTypePath}/`}>
-          <a aria-label={title} href={imgLink}>
-            <Image src={url} title={title} />
-          </a>
-        </Link>
-      )}
+      <Link as={`/${postTypePath}/${slug}`} href={`/${postTypePath}/[slug]`}>
+        <a aria-label={title} href={imgLink}>
+          <Image src={url} title={title} />
+        </a>
+      </Link>
     </div>
   );
 }
