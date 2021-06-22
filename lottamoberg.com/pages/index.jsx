@@ -1,5 +1,3 @@
-import {useState} from 'react';
-
 function NavLinks() {
   return (
     <ul className="flex items-center w-auto m-auto space-x-12">
@@ -74,16 +72,14 @@ export default function Home() {
           </nav>
           <div className="mt-12 mb-12">
             <div className="max-w-lg mx-auto mb-8 text-center">
-
               <h2 className="text-3xl md:text-4xl mt-4 mb-4 font-bold font-heading">
                 <span>Financial analysis through an Austrian economists' </span>
                 <span className="text-blue-600">{` perspective.`}</span>
               </h2>
               <p className="text-blueGray-400 leading-relaxed">
-                Hi. I'm Lotta Moberg, PhD, CFA.</p>
-              <p className="text-gray-900 text-xs">
-                Thanks for visiting!
+                Hi. I'm Lotta Moberg, PhD, CFA.
               </p>
+              <p className="text-gray-900 text-xs">Thanks for visiting!</p>
               <div className="inline-block mx-auto mt-12 mb-0">
                 <img
                   className="rounded-full"
@@ -485,11 +481,12 @@ export default function Home() {
                         Research
                       </a>
                     </li>
-
                   </ul>
                 </div>
                 <div className="w-1/2 lg:w-auto mb-12">
-                  <h5 className="mb-6 text-lg font-bold font-heading">Informal blog</h5>
+                  <h5 className="mb-6 text-lg font-bold font-heading">
+                    Informal blog
+                  </h5>
                   <ul className="space-y-3">
                     <li>
                       <a
