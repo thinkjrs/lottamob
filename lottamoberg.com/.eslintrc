@@ -24,6 +24,7 @@
   "rules": {
     "react/prop-types": "off",
     "prettier/prettier": "error",
+    "react/no-unescaped-entities": "off",
     "react/react-in-jsx-scope": "off",
     "linebreak-style": ["error", "unix"] // change file to LF
   },
