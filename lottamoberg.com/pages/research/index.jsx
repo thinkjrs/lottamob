@@ -24,7 +24,7 @@ export default function BlogPage({allPosts, }) {
             postTypePath='research'
           />
         )}
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        {morePosts.length > 0 && <MoreStories posts={morePosts} postName='research' />}
       </div>
     </>
   );
