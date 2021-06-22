@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import {urlForImage} from '../../lib/sanity';
+import { urlForImage } from '../../lib/sanity';
 
-function Image({src, title, },) {
+function Image({ src, title }) {
   return (
     <img
       width={2000}
@@ -12,23 +12,20 @@ function Image({src, title, },) {
     />
   );
 }
-export default function CoverImage({title, url, slug, postTypePath = 'blog'}) {
-  const imgLink = slug ? `/${postTypePath}/${slug}` : `/${slug}`;
+export default function CoverImage({
+  title,
+  url,
+  slug,
+  postTypePath = 'blog',
+}) {
+  const imgLink = `/${postTypePath}/${slug}`;
   return (
     <div className="-mx-5 sm:mx-0">
-      {slug ? (
-        <Link as={imgLink} href={`/${postTypePath}/[slug]`}>
-          <a aria-label={title} href={imgLink}>
-            <Image src={url} title={title} />
-          </a>
-        </Link>
-      ) : (
-        <Link as={imgLink} href={`/${postTypePath}/`}>
-          <a aria-label={title} href={imgLink}>
-            <Image src={url} title={title} />
-          </a>
-        </Link>
-      )}
+      <Link as={`/${postTypePath}/${slug}`} href={`/${postTypePath}/[slug]`}>
+        <a aria-label={title} href={imgLink}>
+          <Image src={url} title={title} />
+        </a>
+      </Link>
     </div>
   );
 }

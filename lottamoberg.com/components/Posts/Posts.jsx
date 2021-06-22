@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import CoverImage from '../Posts/CoverImage';
 import {parseISO, format} from 'date-fns';
@@ -12,14 +13,20 @@ function HeadingRenderer(props) {
   return <Heading {...props} />
 }*/
 function HeadingRenderer(props) {
-  return createElement(`h${props.level}`, props.children, className = "text-2xl");
+  return createElement(
+    `h${props.level}`,
+    props.children,
+    (className = 'text-2xl'),
+  );
 }
 function PostDate({dateString}) {
   if (dateString & (dateString !== 'undefined')) {
     const date = parseISO(dateString);
-    return <time dateTime={dateString}>{format(date, 'LLLL	       d, yyyy')}</time>;
+    return (
+      <time dateTime={dateString}>{format(date, 'LLLL	       d, yyyy')}</time>
+    );
   }
-  return null
+  return null;
 }
 
 function PostTitle({children}) {
@@ -38,20 +45,19 @@ function PostBody({content}) {
       </div>
     );
   }
-  return null
+  return null;
 }
 
-function PostHeader({title, coverImage}) {
+function PostHeader({title, coverImage, postName = 'blog'}) {
   if (!title || !coverImage) return null;
   return (
     <>
       <PostTitle>{title}</PostTitle>
       <div className="mb-8 md:mb-16 -mx-5 sm:mx-0">
-        <CoverImage title={title} url={coverImage} />
+        <CoverImage title={title} url={coverImage} postTypePath={postName} />
       </div>
       <div className="max-w-2xl mx-auto">
-        <div className="mb-6 text-lg text-black">
-        </div>
+        <div className="mb-6 text-lg text-black"></div>
       </div>
     </>
   );

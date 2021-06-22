@@ -4,13 +4,10 @@ import Head from 'next/head';
 
 import SectionSeparator from '../../components/Layout/SectionSeparator';
 import MoreStories from '../../components/Posts/MoreStories';
-import {PostBody, PostHeader} from '../../components/Posts/Posts';
-import {
-  getAllPostsWithSlug,
-  getPostAndMorePosts,
-} from '../../lib/api';
+import { PostBody, PostHeader } from '../../components/Posts/Posts';
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
 
-function ArticleMetaOG({post, ogUrl}) {
+function ArticleMetaOG({ post, ogUrl }) {
   return (
     <Head>
       <title>{post?.title}</title>
@@ -28,10 +25,9 @@ function ArticleMetaOG({post, ogUrl}) {
     </Head>
   );
 }
-export default function BlogPost({post, morePosts, preview}) {
+export default function BlogPost({ post, morePosts, preview }) {
   const coverImage = post?.mainImage;
   return (
-
     <>
       <div className="pt-20" />
       <div className="container mx-auto px-5">
@@ -50,7 +46,7 @@ export default function BlogPost({post, morePosts, preview}) {
     </>
   );
 }
-export async function getStaticProps({params, preview = false}) {
+export async function getStaticProps({ params, preview = false }) {
   const posts = await getPostAndMorePosts(params.slug, preview);
   // query the data to render for posts
   return {
