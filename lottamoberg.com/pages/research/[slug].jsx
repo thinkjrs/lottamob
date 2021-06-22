@@ -2,10 +2,10 @@
 // and getStaticPaths for server-side-rendering.
 import SectionSeparator from '../../components/Layout/SectionSeparator';
 import MoreStories from '../../components/Posts/MoreStories';
-import {PostBody, PostHeader} from '../../components/Posts/Posts';
-import {getAllPostsWithSlug, getPostAndMorePosts} from '../../lib/api';
+import { PostBody, PostHeader } from '../../components/Posts/Posts';
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
 
-function ArticleMetaOG({post, ogUrl}) {
+function ArticleMetaOG({ post, ogUrl }) {
   return (
     <>
       <title>{post?.title}</title>
@@ -23,7 +23,7 @@ function ArticleMetaOG({post, ogUrl}) {
     </>
   );
 }
-export default function BlogPost({post, morePosts, preview}) {
+export default function BlogPost({ post, morePosts, preview }) {
   return (
     <>
       <div className="pt-20" />
@@ -34,17 +34,19 @@ export default function BlogPost({post, morePosts, preview}) {
             title={post?.title}
             coverImage={post?.mainImage}
             date={post?.date}
-            postName='research'
+            postName="research"
           />
           <PostBody content={post?.body} />
         </article>
         <SectionSeparator />{' '}
-        {morePosts?.length > 0 && <MoreStories posts={morePosts} postName='research' />}
+        {morePosts?.length > 0 && (
+          <MoreStories posts={morePosts} postName="research" />
+        )}
       </div>
     </>
   );
 }
-export async function getStaticProps({params, preview = false}) {
+export async function getStaticProps({ params, preview = false }) {
   const posts = await getPostAndMorePosts(params.slug, preview, 'research');
   // query the data to render for posts
   return {

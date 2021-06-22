@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import {urlForImage} from '../../lib/sanity';
+import { urlForImage } from '../../lib/sanity';
 
-function Image({src, title, },) {
+function Image({ src, title }) {
   return (
     <img
       width={2000}
@@ -12,8 +12,13 @@ function Image({src, title, },) {
     />
   );
 }
-export default function CoverImage({title, url, slug, postTypePath = 'blog'}) {
-  const imgLink = `/${postTypePath}/${slug}`
+export default function CoverImage({
+  title,
+  url,
+  slug,
+  postTypePath = 'blog',
+}) {
+  const imgLink = `/${postTypePath}/${slug}`;
   return (
     <div className="-mx-5 sm:mx-0">
       <Link as={`/${postTypePath}/${slug}`} href={`/${postTypePath}/[slug]`}>

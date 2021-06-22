@@ -5,5 +5,5 @@ module.exports = {
   trailingComma: 'es5',
   jsxBracketSameLine: true,
   noSemi: false,
-  tabWidth: 2
+  tabWidth: 2,
 };

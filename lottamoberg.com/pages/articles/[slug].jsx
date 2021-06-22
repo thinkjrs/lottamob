@@ -4,17 +4,20 @@ import Head from 'next/head';
 
 import SectionSeparator from '../../components/Layout/SectionSeparator';
 import MoreStories from '../../components/Posts/MoreStories';
-import {PostBody, PostHeader} from '../../components/Posts/Posts';
-import {getAllPostsWithSlug, getPostAndMorePosts} from '../../lib/api';
+import { PostBody, PostHeader } from '../../components/Posts/Posts';
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
 
-function ArticleMetaOG({post, ogUrl}) {
+function ArticleMetaOG({ post, ogUrl }) {
   return (
     <Head>
       <title>{post?.title}</title>
       <meta property="og:title" content={post?.title} />
       <meta property="og:type" content="article" />
       <meta property="og:url" content={ogUrl} />
-      <meta property="article:section" content={`${post?.title} - by Lotta Moberg, PhD, CFA`} />
+      <meta
+        property="article:section"
+        content={`${post?.title} - by Lotta Moberg, PhD, CFA`}
+      />
 
       <meta property="article:published_time" content={post?.date} />
       <meta property="og:image" content={post?.mainImage} />
@@ -25,7 +28,7 @@ function ArticleMetaOG({post, ogUrl}) {
     </Head>
   );
 }
-export default function BlogPost({post, morePosts, preview}) {
+export default function BlogPost({ post, morePosts, preview }) {
   const coverImage = post?.mainImage;
   return (
     <>
@@ -37,17 +40,19 @@ export default function BlogPost({post, morePosts, preview}) {
             title={post?.title}
             coverImage={post?.mainImage}
             date={post?.date}
-            postName='article'
+            postName="article"
           />
           <PostBody content={post?.body} />
         </article>
         <SectionSeparator />{' '}
-        {morePosts?.length > 0 && <MoreStories posts={morePosts} postName='article' />}
+        {morePosts?.length > 0 && (
+          <MoreStories posts={morePosts} postName="article" />
+        )}
       </div>
     </>
   );
 }
-export async function getStaticProps({params, preview = false}) {
+export async function getStaticProps({ params, preview = false }) {
   const posts = await getPostAndMorePosts(params.slug, preview, 'article');
   // query the data to render for posts
   return {
