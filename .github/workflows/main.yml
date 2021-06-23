@@ -20,7 +20,8 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install deps and build (with cache)
-        uses: bahmutov/npm-install@v1
-
+        uses: borales/actions-yarn@v2.3.0
+        with: 
+          cmd: install
       - name: Test
-        run: cd lottamoberg.com && npm run test --ci --coverage --maxWorkers=2
+        run: cd lottamoberg.com && yarn test 
