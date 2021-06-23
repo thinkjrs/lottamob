@@ -1,0 +1,45 @@
+# The github labeling workflow bot
+documentation:
+    - ./README.md
+    - ./*.md
+    - lottamoberg.com/*.md
+    - sanity-studio/*.md
+test:
+    - lottamoberg.com/__test__/* 
+    - lottamoberg.com/__test__/*.test.js 
+
+packaging:
+    - package.json
+
+build:
+    - package-lock.json
+    - yarn.lock
+
+configuration:
+    - lottamoberg.com/.prettierrc.js
+    - lottamoberg.com/.eslintrc.js
+    - lottamoberg.com/postcss.config.js
+    - lottamoberg.com/tailwind.config.js
+    - lottamoberg.com/babel.config.js
+
+component:
+    - lottamoberg.com/components/*.js
+
+css:
+    - lottamoberg.com/styles/*
+    - lottamoberg.com/tailwind.config.js
+
+public-facing:
+    - lottamoberg.com/pages/*
+    - lottamoberg.com/components/*
+
+engineering:
+    - lottamoberg.com/lib/*
+
+application:
+    - lottamoberg.com/pages/*
+    - lottamoberg.com/components/*
+    - lottamoberg.com/lib/*
+
+sanity-schema:
+    - sanity-studio/schemas/*.js
