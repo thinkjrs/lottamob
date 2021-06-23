@@ -17,8 +17,8 @@ const config = {
    * https://nextjs.org/docs/basic-features/environment-variables
    **/
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-  apiVersion: '2021-05-16',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "6zq2ow72",
+  apiVersion: '2021-06-23',
   useCdn: process.env.NODE_ENV === 'production',
   /**
    * Set useCdn to `false` if your application require the freshest possible
@@ -55,7 +55,23 @@ export const usePreviewSubscription = createPreviewSubscriptionHook(config);
 /* BlockRenderer is a serializer for the sanity BlockContent component.
  * It should be fed into the BlockContent component as ```{types: { block: BlockRenderer }}```.
  */
-export const BlockRenderer = (props) => {
+// Set up the client for fetching data in the getProps page functions
+const sanityClient = createClient(config);
+// Set up a preview client with serverless authentication for drafts
+const previewClient = createClient({
+  ...config,
+  useCdn: false,
+  token: process.env.SANITY_API_TOKEN,
+});
+
+// Helper function for easily switching between normal client and preview client
+const getClient = (usePreview) =>
+  usePreview ? previewClient : sanityClient;
+
+// Helper function for using the current logged in user account
+const useCurrentUser = createCurrentUserHook(config);
+
+const BlockRenderer = (props) => {
   const setTailwindHeadingClass = (level) => {
     let defaultClassStyles = '';
     if (level == 1) {
@@ -78,13 +94,13 @@ export const BlockRenderer = (props) => {
     }
     return '';
   };
-  const { textStyle = 'normal' } = props.node;
+  const {textStyle = 'normal'} = props.node;
 
   if (/^h\d/.test(textStyle)) {
     const level = textStyle.replace(/[^\d]/g, '');
     return React.createElement(
       textStyle,
-      { className: setTailwindHeadingClass(level) },
+      {className: setTailwindHeadingClass(level)},
       props.children,
     );
   }
@@ -99,20 +115,4 @@ export const BlockRenderer = (props) => {
   return <span className="my-1">{props.children}</span>;
 };
 
-// Set up the client for fetching data in the getProps page functions
-const sanityClient = createClient(config);
-// Set up a preview client with serverless authentication for drafts
-const previewClient = createClient({
-  ...config,
-  useCdn: false,
-  token: process.env.SANITY_API_TOKEN,
-});
-
-// Helper function for easily switching between normal client and preview client
-export const getClient = (usePreview) =>
-  usePreview ? previewClient : sanityClient;
-
-// Helper function for using the current logged in user account
-export const useCurrentUser = createCurrentUserHook(config);
-
-export { sanityClient, previewClient };
+export {sanityClient, previewClient, BlockRenderer, useCurrentUser, getClient};
