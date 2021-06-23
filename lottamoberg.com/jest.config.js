@@ -1,3 +1,3 @@
 module.exports = {
-  setupFiles: ["<rootDir>/.env.local"],
+  setupFiles: ["./.env.local"],
 };
