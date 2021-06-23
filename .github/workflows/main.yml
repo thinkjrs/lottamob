@@ -21,4 +21,4 @@ jobs:
       - name: Install deps and build (with cache)
       - run: cd lottamoberg.com && yarn install
       - name: Test
-      - runcmd: cd lottamoberg.com && yarn test 
+      - run: cd lottamoberg.com && yarn test 
