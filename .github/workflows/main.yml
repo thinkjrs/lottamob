@@ -6,8 +6,8 @@ jobs:
 
     runs-on: ${{ matrix.os }}
     defaults: 
-    run:
-      working-directory: lottamoberg.com
+      run:
+        working-directory: lottamoberg.com
     strategy:
       matrix:
         node: ['14.x']
