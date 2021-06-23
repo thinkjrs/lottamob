@@ -18,10 +18,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-
+      - name: Change directory into site 
+        run: cd lottamoberg.com
       - name: Install deps and build (with cache)
         uses: borales/actions-yarn@v2.3.0
         with: 
           cmd: install
       - name: Test
-        run: cd lottamoberg.com && yarn test 
+        uses: borales/actions-yarn@v2.3.0
+        with: 
+          cmd: test 
