@@ -84,7 +84,6 @@ export async function getSanityQuery(preview, postName = 'post') {
   const query = `*[_type == '${postName}'] | order(date desc, _updatedAt desc) {
       ${postFields}
 }`;
-  console.log(`Query: ${query}`);
   const params = {};
 
   const curClient = getClient(preview);
