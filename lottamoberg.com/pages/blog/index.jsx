@@ -11,7 +11,10 @@ export default function BlogPage({ allPosts }) {
     <>
       <div className="pt-24" />
       <div className="container mx-auto px-5">
-        <Intro />
+        <Intro
+          blogTitle="Blog"
+          blogDescription="Off-the-cuff writings, musings, and thought-provoking essays."
+        />
         <div className="pt-24" />
         {heroPost && (
           <HeroPost
