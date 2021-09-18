@@ -28,14 +28,14 @@ export default function CoverImage({
         <a className="" aria-label={title} href={imgLink}>
           {hero ? (
             <div
-              className="antialiased flex items-center w-auto text-center text-gray-50 text-3xl "
+              className="antialiased flex leading-snug items-center w-auto text-center text-gray-50 text-3xl font-bold"
               id="background-pattern-container"
               style={{
                 backgroundImage: `url("./protruding-squares.svg")`,
                 minHeight: '27rem',
               }}
             >
-              {title}
+              <div className="p-2 xl:p-12">{title}</div>
             </div>
           ) : (
             <div
@@ -46,7 +46,7 @@ export default function CoverImage({
                 minHeight: '12.45rem',
               }}
             >
-              <div className="p-1">{title}</div>
+              <div className="p-2 xl:p-12">{title}</div>
             </div>
           )}
         </a>
