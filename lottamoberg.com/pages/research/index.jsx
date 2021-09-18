@@ -8,7 +8,7 @@ export default function BlogPage({ allPosts }) {
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
   return (
-    <>
+    <div className="px-2">
       <div className="pt-24" />
       <div className="container mx-auto px-5">
         <Intro
@@ -30,7 +30,7 @@ export default function BlogPage({ allPosts }) {
           <MoreStories posts={morePosts} postName="research" />
         )}
       </div>
-    </>
+    </div>
   );
 }
 
