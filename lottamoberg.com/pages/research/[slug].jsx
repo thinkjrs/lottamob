@@ -28,7 +28,7 @@ export default function BlogPost({ post, morePosts, preview }) {
     <>
       <div className="pt-20" />
       <div className="container mx-auto px-5">
-        <article>
+        <article id="content-start">
           <ArticleMetaOG post={post} ogUrl="/" />
           <PostHeader
             title={post?.title}

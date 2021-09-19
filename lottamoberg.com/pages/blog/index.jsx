@@ -8,10 +8,13 @@ export default function BlogPage({ allPosts }) {
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
   return (
-    <>
+    <div className="px-2">
       <div className="pt-24" />
       <div className="container mx-auto px-5">
-        <Intro />
+        <Intro
+          blogTitle="Blog"
+          blogDescription="A lighter take on economics, policy, and geoplitics."
+        />
         <div className="pt-24" />
         {heroPost && (
           <HeroPost
@@ -20,18 +23,20 @@ export default function BlogPage({ allPosts }) {
             date={heroPost.date}
             slug={heroPost.slug}
             excerpt={heroPost.excerpt}
+            postTypePath="blog"
           />
         )}
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        {morePosts.length > 0 && (
+          <MoreStories posts={morePosts} postName="blog" />
+        )}
       </div>
-    </>
+    </div>
   );
 }
 
 export async function getStaticProps({ preview = false }) {
   /* Blog Content */
   const allPosts = await getAllPostsForHome(preview, 'post');
-  //const allPosts = await getAllPostsWithSlug('post');
   return {
     props: {
       allPosts: allPosts,
