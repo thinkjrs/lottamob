@@ -8,12 +8,12 @@ export default function BlogPage({ allPosts }) {
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
   return (
-    <>
+    <div className="px-2">
       <div className="pt-24" />
       <div className="container mx-auto px-5">
         <Intro
-          blogTitle="Media & Articles"
-          blogDescription="Opinion and other writings or talks published in major news outlets or media platforms."
+          blogTitle="Research"
+          blogDescription="Deep dives into challenging questions within economics, policy, and geoplitics."
         />
         <div className="pt-24" />
         {heroPost && (
@@ -27,15 +27,15 @@ export default function BlogPage({ allPosts }) {
           />
         )}
         {morePosts.length > 0 && (
-          <MoreStories posts={morePosts} postName="article" />
+          <MoreStories posts={morePosts} postName="articles" />
         )}
       </div>
-    </>
+    </div>
   );
 }
 
 export async function getStaticProps({ preview = false }) {
-  /* Article Content */
+  /* Research Content */
   const allPosts = await getAllPostsForHome(preview, 'article');
   return {
     props: {
