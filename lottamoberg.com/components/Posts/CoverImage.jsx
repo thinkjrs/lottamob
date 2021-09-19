@@ -31,7 +31,7 @@ export default function CoverImage({
               className="antialiased flex leading-snug items-center w-auto text-center text-gray-50 text-3xl font-bold"
               id="background-pattern-container"
               style={{
-                backgroundImage: `url("./protruding-squares.svg")`,
+                backgroundImage: `url("/protruding-squares.svg")`,
                 minHeight: '27rem',
               }}
             >
@@ -42,7 +42,7 @@ export default function CoverImage({
               className="antialiased flex flex-wrap w-auto items-center text-center text-white text-2xl font-semibold tracking-wide"
               id="background-pattern-container"
               style={{
-                backgroundImage: `url("./large-triangles.svg")`,
+                backgroundImage: `url("/large-triangles.svg")`,
                 minHeight: '12.45rem',
               }}
             >
