@@ -18,6 +18,7 @@ export default function HeroPost({
           title={title}
           url={coverImage}
           postTypePath={postTypePath}
+          hero={true}
         />
       </div>
       <div className="md:grid md:grid-cols-1 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
