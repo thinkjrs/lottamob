@@ -23,19 +23,22 @@ export default function CoverImage({
 }) {
   const imgLink = `/${postTypePath}/${slug}`;
   return (
-    <div className="-mx-5 sm:mx-0 flex">
+    <div
+      id={`${slug}`}
+      className="-mx-5 sm:mx-0 content-center items-center text-center"
+    >
       <Link as={`/${postTypePath}/${slug}`} href={`/${postTypePath}/[slug]`}>
         <a className="" aria-label={title} href={imgLink}>
           {hero ? (
             <div
-              className="antialiased flex leading-snug items-center w-auto text-center text-gray-50 text-3xl font-bold"
+              className="antialiased flex leading-snug mx-auto items-center text-center text-gray-50 text-3xl font-bold"
               id="background-pattern-container"
               style={{
                 backgroundImage: `url("/protruding-squares.svg")`,
                 minHeight: '27rem',
               }}
             >
-              <div className="p-2 xl:p-12">{title}</div>
+              <div className="w-full p-2 xl:p-12">{title}</div>
             </div>
           ) : (
             <div
