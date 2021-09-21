@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import FooterLinks from '../components/Layout/FooterLinks';
+
 function NavLinks() {
   return (
     <ul className="flex items-center w-auto m-auto space-x-12">
@@ -50,14 +53,16 @@ export default function Home() {
         </div>
         <div className="container px-4 mx-auto">
           <nav className="flex justify-between items-center py-6">
-            <a className="text-3xl font-semibold leading-none" href="#">
-              <img
-                className="rounded-full"
-                src="images/bullseye-arrow-regular.svg"
-                alt="Lotta Moberg"
-                width="49"
-              />
-            </a>
+            <Link href="/">
+              <a className="text-3xl font-semibold leading-none" href="/">
+                <img
+                  className="rounded-full"
+                  src="images/bullseye-arrow-regular.svg"
+                  alt="Lottamob: Lotta Moberg, PhD, CFA"
+                  width="49"
+                />
+              </a>
+            </Link>
             <NavLinks />
             <div className="hidden lg:block">
               <a
@@ -70,22 +75,21 @@ export default function Home() {
               ></a>
             </div>
           </nav>
-          <div className="mt-12 mb-12">
+          <div className="mt-12">
             <div className="max-w-lg mx-auto mb-8 text-center">
               <h2 className="text-3xl md:text-4xl mt-4 mb-4 font-bold font-heading">
                 <span>Financial analysis through an Austrian economists' </span>
                 <span className="text-blue-600">{` perspective.`}</span>
               </h2>
               <p className="text-blueGray-400 leading-relaxed">
-                Hi. I'm Lotta Moberg, PhD, CFA.
+                I'm Lotta Moberg, PhD, CFA.
               </p>
-              <p className="text-gray-900 text-xs">Thanks for visiting!</p>
               <div className="inline-block mx-auto mt-12 mb-0">
                 <img
                   className="rounded-full"
-                  src="images/lotta-moberg-phd-cfa.png"
+                  src="images/headshot.jpg"
                   alt="Lotta Moberg, PhD, CFA"
-                  width="300"
+                  width="400"
                 />
               </div>
             </div>
@@ -97,7 +101,7 @@ export default function Home() {
       <section className="py-4 lg:py-12" id="about">
         <div className="container px-4 mx-auto">
           <div className="max-w-lg mx-auto mb-16 text-center">
-            <h2 className="mt-4 mb-2 text-3xl lg:text-4xl font-bold font-heading">
+            <h2 className="-mt-8 mb-2 text-3xl lg:text-4xl font-bold font-heading">
               <span>
                 I synthesize global economics, politics, and policy. My{' '}
               </span>
@@ -115,6 +119,20 @@ export default function Home() {
               {
                 'I study how policies, politics, and institutional developments affect economies of countries around the world. I sit on the Board of Trustees of the CFA Institute Research Foundation and am co-chair of the Education Advisory Group of CFA Society Chicago. '
               }
+            </p>
+            <p className="mt-4 text-blueGray-400 leading-loose">
+              {
+                'And as an angel investor and advisor to emerging, high-growth technology companies, I help craft our future. As a philanthropist, I invest my time and expertise to help organizations such as '
+              }
+              <a
+                className="font-bold leading-tight hover:underline"
+                href="https://refugeecities.org"
+                target="_blank"
+                rel="noopener  noreferrer"
+              >
+                refugeecities.org
+              </a>{' '}
+              build a better world.
             </p>
           </div>
         </div>
@@ -434,16 +452,18 @@ export default function Home() {
         <div className="container px-4 mx-auto">
           <div className="relative flex flex-wrap -mx-4">
             <div className="w-full lg:w-1/2 pt-20 px-4 max-w-lg lg:max-w-full mx-auto lg:mx-0 text-center lg:text-left">
-              <a
-                className="inline-block mx-auto lg:ml-0 text-3xl font-semibold leading-none"
-                href="#"
-              >
-                <img
-                  src="images/bullseye-arrow-regular.svg"
-                  alt="Lotta"
-                  width="300"
-                />
-              </a>
+              <Link href="/">
+                <a
+                  className="inline-block mx-auto lg:ml-0 text-3xl font-semibold leading-none"
+                  href="/"
+                >
+                  <img
+                    src="images/bullseye-arrow-regular.svg"
+                    alt="Lotta"
+                    width="300"
+                  />
+                </a>
+              </Link>
               <div className="mt-12 mb-16 lg:my-24">
                 <p className="mb-4 text-xs text-blueGray-400 text-center lg:text-left">
                   Return regularly to stay fully informed!
@@ -453,17 +473,7 @@ export default function Home() {
                 <p className="text-xs text-blueGray-400">
                   &copy; 2021, Lotta Moberg, PhD, CFA. All rights reserved.
                 </p>
-                <div className="-mx-2 mt-4">
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/facebook-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/twitter-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/instagram-blue.svg" alt="" />
-                  </a>
-                </div>
+                <FooterLinks />
               </div>
             </div>
             <div className="relative w-full lg:w-1/2 px-4 py-8 lg:py-40 lg:pl-12">
@@ -493,7 +503,7 @@ export default function Home() {
                         className="text-lg text-blueGray-400 hover:text-blueGray-500"
                         href="/blog"
                       >
-                        posts
+                        Opinion, short and sweet
                       </a>
                     </li>
                   </ul>
@@ -518,17 +528,7 @@ export default function Home() {
                 <p className="text-xs text-blueGray-400">
                   &copy; 2021, Lotta Moberg, PhD, CFA. All rights reserved.
                 </p>
-                <div className="-mx-2 mt-4">
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/facebook-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/twitter-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/instagram-blue.svg" alt="" />
-                  </a>
-                </div>
+                <FooterLinks />
               </div>
             </div>
           </div>
