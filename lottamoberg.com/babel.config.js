@@ -4,7 +4,6 @@ module.exports = {
       'next/babel',
       {
         'preset-env': {
-          loose: true,
           modules: 'auto',
         },
         'transform-runtime': {},

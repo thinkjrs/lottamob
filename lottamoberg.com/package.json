@@ -1,6 +1,6 @@
 {
   "name": "lottamoberg.com",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,9 +9,11 @@
     "test": "jest --coverage"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.4",
     "next": "^11.1.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-social-icons": "^5.6.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.4",
