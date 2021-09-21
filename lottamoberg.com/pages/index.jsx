@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import FooterLinks from '../components/Layout/FooterLinks';
+
 function NavLinks() {
   return (
     <ul className="flex items-center w-auto m-auto space-x-12">
@@ -50,14 +53,16 @@ export default function Home() {
         </div>
         <div className="container px-4 mx-auto">
           <nav className="flex justify-between items-center py-6">
-            <a className="text-3xl font-semibold leading-none" href="#">
-              <img
-                className="rounded-full"
-                src="images/bullseye-arrow-regular.svg"
-                alt="Lotta Moberg"
-                width="49"
-              />
-            </a>
+            <Link href="/">
+              <a className="text-3xl font-semibold leading-none" href="/">
+                <img
+                  className="rounded-full"
+                  src="images/bullseye-arrow-regular.svg"
+                  alt="Lotta Moberg"
+                  width="49"
+                />
+              </a>
+            </Link>
             <NavLinks />
             <div className="hidden lg:block">
               <a
@@ -434,16 +439,18 @@ export default function Home() {
         <div className="container px-4 mx-auto">
           <div className="relative flex flex-wrap -mx-4">
             <div className="w-full lg:w-1/2 pt-20 px-4 max-w-lg lg:max-w-full mx-auto lg:mx-0 text-center lg:text-left">
-              <a
-                className="inline-block mx-auto lg:ml-0 text-3xl font-semibold leading-none"
-                href="#"
-              >
-                <img
-                  src="images/bullseye-arrow-regular.svg"
-                  alt="Lotta"
-                  width="300"
-                />
-              </a>
+              <Link href="/">
+                <a
+                  className="inline-block mx-auto lg:ml-0 text-3xl font-semibold leading-none"
+                  href="/"
+                >
+                  <img
+                    src="images/bullseye-arrow-regular.svg"
+                    alt="Lotta"
+                    width="300"
+                  />
+                </a>
+              </Link>
               <div className="mt-12 mb-16 lg:my-24">
                 <p className="mb-4 text-xs text-blueGray-400 text-center lg:text-left">
                   Return regularly to stay fully informed!
@@ -453,17 +460,7 @@ export default function Home() {
                 <p className="text-xs text-blueGray-400">
                   &copy; 2021, Lotta Moberg, PhD, CFA. All rights reserved.
                 </p>
-                <div className="-mx-2 mt-4">
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/facebook-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/twitter-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/instagram-blue.svg" alt="" />
-                  </a>
-                </div>
+                <FooterLinks />
               </div>
             </div>
             <div className="relative w-full lg:w-1/2 px-4 py-8 lg:py-40 lg:pl-12">
@@ -518,17 +515,7 @@ export default function Home() {
                 <p className="text-xs text-blueGray-400">
                   &copy; 2021, Lotta Moberg, PhD, CFA. All rights reserved.
                 </p>
-                <div className="-mx-2 mt-4">
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/facebook-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/twitter-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="metis-assets/icons/instagram-blue.svg" alt="" />
-                  </a>
-                </div>
+                <FooterLinks />
               </div>
             </div>
           </div>
