@@ -58,7 +58,7 @@ export default function Home() {
                 <img
                   className="rounded-full"
                   src="images/bullseye-arrow-regular.svg"
-                  alt="Lotta Moberg"
+                  alt="Lottamob: Lotta Moberg, PhD, CFA"
                   width="49"
                 />
               </a>
@@ -75,22 +75,21 @@ export default function Home() {
               ></a>
             </div>
           </nav>
-          <div className="mt-12 mb-12">
+          <div className="mt-12">
             <div className="max-w-lg mx-auto mb-8 text-center">
               <h2 className="text-3xl md:text-4xl mt-4 mb-4 font-bold font-heading">
                 <span>Financial analysis through an Austrian economists' </span>
                 <span className="text-blue-600">{` perspective.`}</span>
               </h2>
               <p className="text-blueGray-400 leading-relaxed">
-                Hi. I'm Lotta Moberg, PhD, CFA.
+                I'm Lotta Moberg, PhD, CFA.
               </p>
-              <p className="text-gray-900 text-xs">Thanks for visiting!</p>
               <div className="inline-block mx-auto mt-12 mb-0">
                 <img
                   className="rounded-full"
-                  src="images/lotta-moberg-phd-cfa.png"
+                  src="images/headshot.jpg"
                   alt="Lotta Moberg, PhD, CFA"
-                  width="300"
+                  width="400"
                 />
               </div>
             </div>
@@ -102,7 +101,7 @@ export default function Home() {
       <section className="py-4 lg:py-12" id="about">
         <div className="container px-4 mx-auto">
           <div className="max-w-lg mx-auto mb-16 text-center">
-            <h2 className="mt-4 mb-2 text-3xl lg:text-4xl font-bold font-heading">
+            <h2 className="-mt-8 mb-2 text-3xl lg:text-4xl font-bold font-heading">
               <span>
                 I synthesize global economics, politics, and policy. My{' '}
               </span>
@@ -120,6 +119,12 @@ export default function Home() {
               {
                 'I study how policies, politics, and institutional developments affect economies of countries around the world. I sit on the Board of Trustees of the CFA Institute Research Foundation and am co-chair of the Education Advisory Group of CFA Society Chicago. '
               }
+            </p>
+            <p className="mt-4 text-blueGray-400 leading-loose">
+              {
+                'And as an angel investor and advisor to technology companies, I help craft our future. And as a philanthropist, I invest my time and expertise to help organizations such as '
+              }
+              <a href="https://refugeecities.org">refugeecities.org</a>.
             </p>
           </div>
         </div>
