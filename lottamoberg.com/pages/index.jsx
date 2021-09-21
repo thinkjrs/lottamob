@@ -122,9 +122,17 @@ export default function Home() {
             </p>
             <p className="mt-4 text-blueGray-400 leading-loose">
               {
-                'And as an angel investor and advisor to technology companies, I help craft our future. And as a philanthropist, I invest my time and expertise to help organizations such as '
+                'And as an angel investor and advisor to emerging, high-growth technology companies, I help craft our future. As a philanthropist, I invest my time and expertise to help organizations such as '
               }
-              <a href="https://refugeecities.org">refugeecities.org</a>.
+              <a
+                className="font-bold leading-tight hover:underline"
+                href="https://refugeecities.org"
+                target="_blank"
+                rel="noopener  noreferrer"
+              >
+                refugeecities.org
+              </a>{' '}
+              build a better world.
             </p>
           </div>
         </div>
@@ -495,7 +503,7 @@ export default function Home() {
                         className="text-lg text-blueGray-400 hover:text-blueGray-500"
                         href="/blog"
                       >
-                        posts
+                        Opinion, short and sweet
                       </a>
                     </li>
                   </ul>
