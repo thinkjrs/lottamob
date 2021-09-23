@@ -84,9 +84,9 @@ export default function Home() {
               <p className="text-blueGray-400 leading-relaxed">
                 I'm Lotta Moberg, PhD, CFA.
               </p>
-              <div className="inline-block mx-auto mt-12 mb-0">
+              <div className="transform inline-block mx-auto mt-12 mb-0 hover:scale-110 duration-500">
                 <img
-                  className="rounded-full"
+                  className="rounded-full "
                   src="images/headshot.jpg"
                   alt="Lotta Moberg, PhD, CFA"
                   width="400"
