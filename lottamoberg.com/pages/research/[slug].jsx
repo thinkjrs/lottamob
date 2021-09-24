@@ -7,24 +7,6 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 
-function ArticleMetaOG({ post, ogUrl }) {
-  return (
-    <>
-      <title>{post?.title}</title>
-      <meta property="og:title" content={post?.title} />
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content={ogUrl} />
-      <meta property="article:section" content={`${post?.title} - Moberg`} />
-
-      <meta property="article:published_time" content={post?.date} />
-      <meta property="og:image" content={post?.mainImage} />
-      <meta
-        property="og:description"
-        content={`${post?.title} by Lotta Moberg, PhD, CFA on ${post?.date}.`}
-      />
-    </>
-  );
-}
 export default function BlogPost({ post, morePosts, preview }) {
   const router = useRouter();
   return (
