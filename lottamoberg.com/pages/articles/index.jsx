@@ -12,8 +12,8 @@ export default function BlogPage({ allPosts }) {
       <div className="pt-24" />
       <div className="container mx-auto px-5">
         <Intro
-          blogTitle="Research"
-          blogDescription="Deep dives into challenging questions within economics, policy, and geoplitics."
+          blogTitle="Articles"
+          blogDescription="Formal, non-academic news, media, and other relevant content."
         />
         <div className="pt-24" />
         {heroPost && (
@@ -27,7 +27,7 @@ export default function BlogPage({ allPosts }) {
           />
         )}
         {morePosts.length > 0 && (
-          <MoreStories posts={morePosts} postName="articles" />
+          <MoreStories posts={morePosts} postName="article" />
         )}
       </div>
     </div>
