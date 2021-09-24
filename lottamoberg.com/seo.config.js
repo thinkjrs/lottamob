@@ -7,7 +7,7 @@ export default {
       'My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.',
     images: [
       {
-        url: '/lottamob_og_site.jpg',
+        url: 'https://res.cloudinary.com/musicfox/image/upload/v1632518117/miscelaneous/lottamob_og_site_he0tbv.jpg',
         width: 800,
         height: 600,
         alt: 'The research, media, and blog site of Lotta Moberg PhD, CFA',
