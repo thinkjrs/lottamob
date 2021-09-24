@@ -5,6 +5,7 @@ import MoreStories from '../../components/Posts/MoreStories';
 import { PostBody, PostHeader } from '../../components/Posts/Posts';
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
 import { NextSeo } from 'next-seo';
+import { useRouter } from 'next/router';
 
 export default function BlogPost({ post, morePosts, preview }) {
   const router = useRouter();
