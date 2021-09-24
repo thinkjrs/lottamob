@@ -8,6 +8,7 @@ import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 
 export default function BlogPost({ post, morePosts, preview }) {
+  const router = useRouter();
   return (
     <>
       <NextSeo
