@@ -5,7 +5,7 @@ import MoreStories from '../../components/Posts/MoreStories';
 import { PostBody, PostHeader } from '../../components/Posts/Posts';
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
 import { NextSeo } from 'next-seo';
-import useRouter from 'next/router';
+import { useRouter } from 'next/router';
 
 function ArticleMetaOG({ post, ogUrl }) {
   return (
