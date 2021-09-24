@@ -36,11 +36,11 @@ export default function BlogPost({ post, morePosts, preview }) {
         openGraph={{
           url: `https://www.lottamoberg.com${router.asPath}`,
           title: post?.title,
-          description: post.body,
+          description: post?.excerpt,
         }}
         twitter={{
-          handle: '@handle',
-          site: '@site',
+          handle: '@lottamob',
+          site: '@lottamob',
           cardType: 'summary_large_image',
         }}
       />
