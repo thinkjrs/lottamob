@@ -36,6 +36,7 @@ function NavLinks() {
 export default function Home() {
   return (
     <>
+      <NextSeo description="Research and analysis that synthesizes global economics, politics, and policy from the leading macroeconomic analyst on the Dynamic Allocations Strategies team at William Blair." />
       <div className="">
         <section className="relative overflow-x-hidden">
           <div className="hidden md:block absolute top-0 left-0 mt-32 -ml-32 lg:-ml-24">
