@@ -1,4 +1,8 @@
 export default {
+  description:
+    'My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.',
+  defaultTitle:
+    'Perspective through the lense of an Austrian economist, Lotta Moberg, PhD, CFA',
   openGraph: {
     url: 'https://www.lottamoberg.com',
     title:
