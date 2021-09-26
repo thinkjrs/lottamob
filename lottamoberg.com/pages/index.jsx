@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import FooterLinks from '../components/Layout/FooterLinks';
 import { NextSeo } from 'next-seo';
 
@@ -57,11 +58,12 @@ export default function Home() {
             <nav className="flex justify-between items-center py-6">
               <Link href="/">
                 <a className="text-3xl font-semibold leading-none" href="/">
-                  <img
+                  <Image
                     className="rounded-full"
-                    src="images/bullseye-arrow-regular.svg"
-                    alt="Lottamob: Lotta Moberg, PhD, CFA"
-                    width="49"
+                    src="/images/bullseye-arrow-regular.svg"
+                    alt="Lottamob target icon for Lotta Moberg, PhD, CFA"
+                    width="50"
+                    height="50"
                   />
                 </a>
               </Link>
@@ -89,11 +91,12 @@ export default function Home() {
                   I'm Lotta Moberg, PhD, CFA.
                 </p>
                 <div className="transform inline-block mx-auto mt-12 mb-0 hover:scale-110 duration-500">
-                  <img
+                  <Image
                     className="rounded-full "
-                    src="images/headshot.jpg"
+                    src="/images/headshot.jpg"
                     alt="Lotta Moberg, PhD, CFA"
                     width="400"
+                    height="400"
                   />
                 </div>
               </div>
@@ -461,10 +464,11 @@ export default function Home() {
                     className="inline-block mx-auto lg:ml-0 text-3xl font-semibold leading-none"
                     href="/"
                   >
-                    <img
-                      src="images/bullseye-arrow-regular.svg"
-                      alt="Lotta"
+                    <Image
+                      src="/images/bullseye-arrow-regular.svg"
+                      alt="Lottamob target icon enlarged for Lotta Moberg, Phd, CFA"
                       width="300"
+                      height="300"
                     />
                   </a>
                 </Link>
