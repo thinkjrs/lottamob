@@ -1,14 +1,14 @@
 const siteMetadata = {
   title: 'Perspective through the lense of Lotta Moberg, PhD, CFA',
   author: 'Lotta Moberg, PhD, CFA',
-  headerTitle: 'Lottamoberg.com',
+  headerTitle: '',
   description:
     'My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://lottamoberg.com',
   siteRepo: 'https://github.com/thinkjrs/lottamob',
-  siteLogo: '/static/images/logo.png',
+  siteLogo: '/static/images/lotta-headshot.jpeg',
   image: '/static/images/lotta-headshot.jpeg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'lotta@lottamoberg.com',
