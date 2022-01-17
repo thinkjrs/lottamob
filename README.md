@@ -1,6 +1,8 @@
 # lottamob
 Lotta's site. For the world. Use and abuse, please.
 
+See it live [lottamoberg.com](https://lottamoberg.com/).
+
 ## Development 
 
 Clone the repo with `git clone git@github.com:thinkjrs/lottamob`.
