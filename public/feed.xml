@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Fri, 03 Dec 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/the-webs-last-mile</guid>
+    <title>The Web&#39;s Last Mile</title>
+    <link>https://lottamoberg.com/writings/the-webs-last-mile</link>
+    <description>How we&#39;re growing to focus on the web&#39;s last mile.</description>
+    <pubDate>Fri, 03 Dec 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Web Challenges In The 20s</category><category>web last mile</category><category>tincre</category><category>web-scale-problems</category>
+  </item>
+
+    </channel>
+  </rss>
