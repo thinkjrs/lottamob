@@ -7,3 +7,13 @@ linkedin: https://www.linkedin.com/in/lottamob
 github: https://github.com/lottamob
 ---
 
+# Financial thought leadership and analysis from an Austrian economics perspective.
+
+I study how policies, politics, and institutional developments affect economies of countries around the world. I sit on the Board of Trustees of the CFA Institute Research Foundation and am co-chair of the Education Advisory Group of CFA Society Chicago. 
+
+I explore the economic foundations of finance to dissect and explain the prosperity of countries, growth of markets, and the institutional and politcal drivers of financial returns.
+
+I am the author of [_The Political Economy of Special Economic Zones_](https://smile.amazon.com/Political-Economy-Special-Economic-Zones/dp/1138237817) and have published articles releated to special economic zones, tax policy, and municipal bankruptcy. And as an angel 
+investor and advisor to emerging, high-growth technology companies, I help craft the world's future.
+
+
