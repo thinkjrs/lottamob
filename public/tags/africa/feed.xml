@@ -1,0 +1,44 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Tue, 30 Nov 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/africa/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/how-to-sustain-export-dynamism-by-reducing-duality-in-the-dominican-republic-a-world-bank-trade</guid>
+    <title>How to sustain export dynamism by reducing duality in the Dominican Republic A World Bank trade competitiveness diagnostic</title>
+    <link>https://lottamoberg.com/writings/how-to-sustain-export-dynamism-by-reducing-duality-in-the-dominican-republic-a-world-bank-trade</link>
+    <description>A broad look at export competitiveness of the Dominican Republic, where I contribute with a perspective on special economic zones.</description>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>SEZ</category><category>Political Economy</category><category>Research</category><category>Academic</category><category>Africa</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/sez-africa-business-coordination</guid>
+    <title>It worked in China, so why not in Africa? The political economy challenge of Special Economic Zones</title>
+    <link>https://lottamoberg.com/writings/sez-africa-business-coordination</link>
+    <description>Despite decades of international experience, there remains no blueprint for successful special economic zone policies. We propose a ‘robust political economy’ framework that divides political economy problems into those of inadequate knowledge and distorted incentives.</description>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>SEZ</category><category>Political Economy</category><category>Research</category><category>Academic</category><category>Africa</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/the-political-economy-of-special-economic-zones</guid>
+    <title>The Political Economy of Special Economic Zones</title>
+    <link>https://lottamoberg.com/writings/the-political-economy-of-special-economic-zones</link>
+    <description>This paper is a first attempt to apply a robust political economy framework to explain when Special Economic Zones can contribute to economic development. The framework can be applied to judge their potential efficacy, something that orthodox studies of country features such as natural resources, infrastructure, and zone location fail to do.</description>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>SEZ</category><category>Political Economy</category><category>Research</category><category>Academic</category><category>Africa</category>
+  </item>
+
+    </channel>
+  </rss>

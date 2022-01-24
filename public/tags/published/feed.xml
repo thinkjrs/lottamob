@@ -1,0 +1,54 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Wed, 01 Dec 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/published/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/special-economic-zones-and-liberalization-avalanches</guid>
+    <title>Special economic zones and liberalization avalanches</title>
+    <link>https://lottamoberg.com/writings/special-economic-zones-and-liberalization-avalanches</link>
+    <description>We show under what conditions a special economic zone will succeed at spurring development and at sparking broader liberalization.</description>
+    <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>SEZ</category><category>Political Economy</category><category>Research</category><category>Academic</category><category>Published</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/liberalizing-rent-seeking-how-export-processing-zones-can-save-or-sink-an-economy</guid>
+    <title>Liberalizing Rent-Seeking - How Export Processing Zones Can Save or Sink an Economy</title>
+    <link>https://lottamoberg.com/writings/liberalizing-rent-seeking-how-export-processing-zones-can-save-or-sink-an-economy</link>
+    <description>This paper presents export processing zones (EPZs) as a rent-seeking tool with the appearance of a development policy. My model indicates that EPZs do not benefit an economy via backward linkages but through marginal improvements to a country’s trade regime.</description>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>EPZ</category><category>Political Economy</category><category>Research</category><category>Academic</category><category>Published</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/refugee-special-economic-zones</guid>
+    <title>Refugee Special Economic Zones</title>
+    <link>https://lottamoberg.com/writings/refugee-special-economic-zones</link>
+    <description>The purpose of this paper is to show how special economic zones (SEZs) can be applied to refugee camps. Zones are powerful tools for investors to act like institutional entrepreneurs, who promote institutional reform by pursuing exemptions from government constraints and taxes or by advocating for reform. Refugee SEZs (R-SEZs) would similarly allow for institutional entrepreneurs to promote broader immigration reform.</description>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>SEZ</category><category>Political Economy</category><category>Research</category><category>Academic</category><category>Published</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/the-political-economy-of-special-economic-zones-lessons-for-the-united-states</guid>
+    <title>The Political Economy of Special Economic Zones - Lessons for the United States</title>
+    <link>https://lottamoberg.com/writings/the-political-economy-of-special-economic-zones-lessons-for-the-united-states</link>
+    <description>This article explores the benefits and downsides of special economic zones, and analyzes their economic and political impact on the United States. It argues that, though widely implemented in the country, the zones have likely done more harm than good for the United States.</description>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>SEZ</category><category>USA</category><category>Research</category><category>Academic</category><category>Published</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -1,0 +1,54 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Tue, 30 Nov 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/resource-misallocation/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/cartelizing-taxes-understanding-the-oecd-s-campaign-against-harmful-tax-competition</guid>
+    <title>Cartelizing Taxes - Understanding the OECD’s Campaign against ‘Harmful Tax Competition</title>
+    <link>https://lottamoberg.com/writings/cartelizing-taxes-understanding-the-oecd-s-campaign-against-harmful-tax-competition</link>
+    <description>While previously addressing issues of double taxation, the OECD shifted to restricting tax competition and increasing automatic exchanges of tax information. We analyze the reasons for this shift in policy focus.</description>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Tax Policy</category><category>Political Economy</category><category>Research</category><category>Resource Misallocation</category><category>Benefit Policies</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/default-without-capital-account-the-economics-of-municipal-bankruptcy</guid>
+    <title>Default Without Capital Account - The Economics of Municipal Bankruptcy</title>
+    <link>https://lottamoberg.com/writings/default-without-capital-account-the-economics-of-municipal-bankruptcy</link>
+    <description>This paper analyzes the concept of municipal bankruptcy in a comparative framework with commercial bankruptcy. Because of significant institutional differences between the two forms of corporation, we argue that it is impossible to construct a bridge between them.</description>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>SEZ</category><category>Public Finance</category><category>Research</category><category>Resource Misallocation</category><category>Municipal Bankruptcy</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/hur-svart-kan-det-vara-nio-fragor-och-svar-om-reformer-i-vaesterlaendska-demokratier</guid>
+    <title>Hur svårt kan det vara? Nio frågor och svar om reformer i västerländska demokratier (How Hard Can It Be? Nine Questions and Answers on Reform in Western Democracies)</title>
+    <link>https://lottamoberg.com/writings/hur-svart-kan-det-vara-nio-fragor-och-svar-om-reformer-i-vaesterlaendska-demokratier</link>
+    <description>In Swedish. We perform a literature review of the research on how some counties have pursued efficiency enhancing welfare reforms. We find several clear findings of the political, bureacratic, and economic prerequisites for successful reforms.</description>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Reform</category><category>Political Economy</category><category>Research</category><category>Resource Misallocation</category><category>Democracy</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/the-political-economy-of-state-provided-targeted-benefits</guid>
+    <title>The political economy of state-provided targeted benefits</title>
+    <link>https://lottamoberg.com/writings/the-political-economy-of-state-provided-targeted-benefits</link>
+    <description>This paper analyzes the concept of municipal bankruptcy in a comparative framework with commercial bankruptcy. Because of significant institutional differences between the two forms of corporation, we argue that it is impossible to construct a bridge between them.</description>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>SEZ</category><category>Political Economy</category><category>Research</category><category>Resource Misallocation</category><category>Benefit Policies</category>
+  </item>
+
+    </channel>
+  </rss>
