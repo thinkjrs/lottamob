@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Sun, 16 Aug 2020 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/free-cities/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/My-Chat-with-Mark-Lutter-of-the-Charter-Cities-Institute</guid>
+    <title>My Chat with Mark Lutter of the Charter Cities Institute</title>
+    <link>https://lottamoberg.com/writings/My-Chat-with-Mark-Lutter-of-the-Charter-Cities-Institute</link>
+    <description>Python automated testing in brief and a few principles to keep in mind.</description>
+    <pubDate>Sun, 16 Aug 2020 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>SEZs</category><category>Charter cities</category><category>Political Economy</category><category>Free cities</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -1,0 +1,54 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Sat, 15 Jul 2017 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/book-promotion/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/My-Blog-Post-on-the-WEPZA-Blog-marketing-my-book</guid>
+    <title>My Blog Post on the WEPZA Blog marketing my book</title>
+    <link>https://lottamoberg.com/writings/My-Blog-Post-on-the-WEPZA-Blog-marketing-my-book</link>
+    <description>I make the case for why everyone interested in zones should read my book.</description>
+    <pubDate>Sat, 15 Jul 2017 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Political economy</category><category>SEZs</category><category>Book promotion</category><category>Economic development</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/Don-Boudreaux-Blogs-About-My-Book-at-Cafe-Hayek</guid>
+    <title>Don Boudreaux Blogs About My Book at Cafe Hayek</title>
+    <link>https://lottamoberg.com/writings/Don-Boudreaux-Blogs-About-My-Book-at-Cafe-Hayek</link>
+    <description>I make the case for why everyone interested in zones should read my book.</description>
+    <pubDate>Fri, 14 Apr 2017 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Political economy</category><category>SEZs</category><category>Book promotion</category><category>Economic development</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/The-Political-Economy-of-Special-Economic-Zones-is-out</guid>
+    <title>The Political Economy of Special Economic Zones is out!</title>
+    <link>https://lottamoberg.com/writings/The-Political-Economy-of-Special-Economic-Zones-is-out</link>
+    <description>Description of my book on SEZs and links to purchase it.</description>
+    <pubDate>Fri, 24 Mar 2017 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Political economy</category><category>SEZs</category><category>Book promotion</category><category>Economic development</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/Tyler-Cowen-at-Marginal-Revolution-blogs-on-my-book</guid>
+    <title>Tyler Cowen at Marginal Revolution blogs on my book</title>
+    <link>https://lottamoberg.com/writings/Tyler-Cowen-at-Marginal-Revolution-blogs-on-my-book</link>
+    <description>I make the case for why everyone interested in zones should read my book.</description>
+    <pubDate>Fri, 24 Mar 2017 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Political economy</category><category>SEZs</category><category>Book promotion</category><category>Economic development</category>
+  </item>
+
+    </channel>
+  </rss>

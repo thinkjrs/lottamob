@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Fri, 14 Apr 2017 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/protectionism/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/My-Opinion-Piece-in-the-Daily-Caller-on-Special-Economic-Zones</guid>
+    <title>My Opinion Piece in the Daily Caller on Special Economic Zones</title>
+    <link>https://lottamoberg.com/writings/My-Opinion-Piece-in-the-Daily-Caller-on-Special-Economic-Zones</link>
+    <description>I argue that oncreased protectionism may create the moment for SEZs in the US.</description>
+    <pubDate>Fri, 14 Apr 2017 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Political economy</category><category>SEZs</category><category>Protectionism</category><category>Liberalization</category>
+  </item>
+
+    </channel>
+  </rss>

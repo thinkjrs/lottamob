@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Sat, 21 Jul 2018 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/opportunity-zones/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/Cited-in-BBC-Vietnamese</guid>
+    <title>Cited in BBC Vietnamese</title>
+    <link>https://lottamoberg.com/writings/Cited-in-BBC-Vietnamese</link>
+    <description>I explain the often underappreciated political economy aspects of special economic zones.</description>
+    <pubDate>Sat, 21 Jul 2018 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Opportunity zones</category><category>SEZs</category><category>Enterprise zones</category><category>Political economy</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/Cited-in-the-Yale-Daily-News</guid>
+    <title>Cited in the Yale Daily News</title>
+    <link>https://lottamoberg.com/writings/Cited-in-the-Yale-Daily-News</link>
+    <description>I explain the main pitfalls of opportunity zones.</description>
+    <pubDate>Sat, 21 Jul 2018 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Opportunity zones</category><category>SEZs</category><category>Enterprise zones</category><category>Political economy</category>
+  </item>
+
+    </channel>
+  </rss>

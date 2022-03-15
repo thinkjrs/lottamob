@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Sat, 29 Jan 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/macroeconomics/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/Macro-Matters-with-the-CFA-Society-Chicago</guid>
+    <title>Macro Matters with the CFA Society Chicago</title>
+    <link>https://lottamoberg.com/writings/Macro-Matters-with-the-CFA-Society-Chicago</link>
+    <description>Flagging my participation in Macro Matters, part of the CFA Society Chicago podcast.</description>
+    <pubDate>Sat, 29 Jan 2022 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Macroeconomics</category><category>Markets</category><category>Investments</category><category>CFA</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/opinion-piece-in-the-financial-times</guid>
+    <title>Opinion piece in the Financial Times</title>
+    <link>https://lottamoberg.com/writings/opinion-piece-in-the-financial-times</link>
+    <description>Today’s ultra-low interest rates are anything but ‘natural’.</description>
+    <pubDate>Sat, 22 Aug 2020 05:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Macroeconomics</category><category>Interest rates</category><category>Central Banks</category><category>Financial repression</category><category>Monetary History</category>
+  </item>
+
+    </channel>
+  </rss>

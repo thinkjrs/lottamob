@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Fri, 28 Jan 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/economics/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/Check-out-the-CFA-Society-Chicago-Podcast</guid>
+    <title>Check out the CFA Society Chicago Podcast</title>
+    <link>https://lottamoberg.com/writings/Check-out-the-CFA-Society-Chicago-Podcast</link>
+    <description>This link takes you to the excellent podcast produced by CFA Society Chicago.</description>
+    <pubDate>Fri, 28 Jan 2022 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>CFA</category><category>Economics</category><category>Investments</category><category>Podcasts</category>
+  </item>
+
+    </channel>
+  </rss>
