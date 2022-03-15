@@ -13,6 +13,8 @@ Run it locally via `npm run dev`.
 
 This site is a slightly-modified [https://github.com/timlrx/tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) blog for Lotta's writings and research. 
 
+This site is maintained by @thinkjrs.
+
 ### Contributing
 
 We :heart: contributions! Please file issues and pull requests for changes you'd like to see.
