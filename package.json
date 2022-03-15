@@ -1,7 +1,9 @@
 {
-  "name": "tailwind-nextjs-starter-blog",
-  "version": "1.4.1",
-  "private": true,
+  "name": "lottamoberg.com",
+  "version": "0.1.0",
+  "repository": "https://github.com/thinkjrs/lottamob",
+  "description": "The main site for Lotta Moberg, PhD, CFA. Economics, investments, and research.",
+  "private": false,
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
     "dev": "next dev",
