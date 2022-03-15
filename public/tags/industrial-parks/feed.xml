@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Thu, 15 Feb 2018 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/industrial-parks/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/my-talk-at-the-startup-foundation-summit-in-san-francisco-in-august-2017</guid>
+    <title>My talk at the Startup Foundation&#39;s Summit in San Francisco in August, 2017</title>
+    <link>https://lottamoberg.com/writings/my-talk-at-the-startup-foundation-summit-in-san-francisco-in-august-2017</link>
+    <description>I talk about the political economy aspects of special economic zones.</description>
+    <pubDate>Thu, 15 Feb 2018 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Political economy</category><category>SEZs</category><category>Industrial parks</category><category>Single factory zones</category>
+  </item>
+
+    </channel>
+  </rss>

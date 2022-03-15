@@ -1,0 +1,44 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Perspective through the lense of Lotta Moberg, PhD, CFA</title>
+      <link>https://lottamoberg.com/writings</link>
+      <description>My research and analysis synthesizes global economics, politics, and policy as a macroeconomic analyst at the Dynamic Allocations Strategies team at William Blair.</description>
+      <language>en-us</language>
+      <managingEditor>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</managingEditor>
+      <webMaster>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</webMaster>
+      <lastBuildDate>Sun, 25 Feb 2018 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://lottamoberg.com/tags/decentralization/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://lottamoberg.com/writings/My-Talk-at-the-Chapman-Symposium-on-Special-Jurisdictions</guid>
+    <title>My Talk at the Chapman Symposium on Special Jurisdictions</title>
+    <link>https://lottamoberg.com/writings/My-Talk-at-the-Chapman-Symposium-on-Special-Jurisdictions</link>
+    <description>I discuss the negative and positive conseqeuence of special economic zones.</description>
+    <pubDate>Sun, 25 Feb 2018 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Decentralization</category><category>SEZs</category><category>Enterprise zones</category><category>Political economy</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/Interview-with-me-with-the-Startup-Societies-Foundation</guid>
+    <title>Interview with me by the Startup Societies Foundation</title>
+    <link>https://lottamoberg.com/writings/Interview-with-me-with-the-Startup-Societies-Foundation</link>
+    <description>I explain the often underappreciated political economy aspects of special economic zones.</description>
+    <pubDate>Sun, 17 Dec 2017 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Decentralization</category><category>SEZs</category><category>Enterprise zones</category><category>Political economy</category>
+  </item>
+
+  <item>
+    <guid>https://lottamoberg.com/writings/interview-with-me-by-the-seasteading-institute</guid>
+    <title>Interview with me by The Seasteading Institute!</title>
+    <link>https://lottamoberg.com/writings/interview-with-me-by-the-seasteading-institute</link>
+    <description>I explain the often underappreciated political economy aspects of special economic zones.</description>
+    <pubDate>Sat, 22 Jul 2017 00:00:00 GMT</pubDate>
+    <author>lotta@lottamoberg.com (Lotta Moberg, PhD, CFA)</author>
+    <category>Decentralization</category><category>SEZs</category><category>Enterprise zones</category><category>Political economy</category>
+  </item>
+
+    </channel>
+  </rss>
