@@ -13,7 +13,16 @@ I study how policies, politics, and institutional developments affect economies 
 
 I explore the economic foundations of finance to dissect and explain the prosperity of countries, growth of markets, and the institutional and politcal drivers of financial returns.
 
-I am the author of [_The Political Economy of Special Economic Zones_](https://smile.amazon.com/Political-Economy-Special-Economic-Zones/dp/1138237817) and have published articles releated to special economic zones, tax policy, and municipal bankruptcy. And as an angel 
-investor and advisor to emerging, high-growth technology companies, I help craft the world's future.
+## Authorship
+I am the author of [_The Political Economy of Special Economic Zones_](https://smile.amazon.com/Political-Economy-Special-Economic-Zones/dp/1138237817) and have published articles releated to special economic zones, tax policy, and municipal bankruptcy.
 
+## New venture capital
+As an angel investor and advisor to emerging, high-growth technology companies, I help craft the world's future. 
 
+## Research 
+
+Examine my [research here](/tags/research).
+
+## Other writings 
+
+All of my other writings and posts are [here](/writings).
