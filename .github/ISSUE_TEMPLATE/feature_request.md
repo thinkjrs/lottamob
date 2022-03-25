@@ -1,7 +1,7 @@
 ---
 name: Feature request
-about: Suggest an idea for Fan.Booster
-title: "[Feature]"
+about: Suggest an idea for lottamob 
+title: "✨ [Feature]:"
 labels: enhancement
 assignees: thinkjrs
 

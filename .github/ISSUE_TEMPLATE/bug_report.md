@@ -1,7 +1,7 @@
 ---
 name: Bug report
-about: Report a problem to improve Fan.Booster
-title: "[BUG]"
+about: Report a problem to improve lottamob
+title: "🐞 [BUG]:"
 labels: bug
 assignees: thinkjrs
 
