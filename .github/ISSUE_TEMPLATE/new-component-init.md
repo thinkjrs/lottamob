@@ -13,4 +13,4 @@ assignees: thinkjrs
 <!-- If your component idea contains anything unique or special, discuss it here in a few sentences or bullet points.-->
 
 ## Client apps 
-<!--List all the apps you see this component being used in and their particular use cases. E.g. in Fan.Booster a "line graph" component is used in client pages.-->
+<!--List all the apps you see this component being used in and their particular use cases. E.g. in a "line graph" component which is used in blog page renders.-->
