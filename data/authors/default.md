@@ -1,8 +1,8 @@
 ---
 name: Lotta Moberg, PhD, CFA
 avatar: /static/images/lotta-headshot.jpeg
-occupation: Author and Senior Macro Analyst
-company: William Blair Investment Management
+occupation: Author, Founder, Co-CIO
+company: ViviFi Ventures  
 linkedin: https://www.linkedin.com/in/lottamob
 github: https://github.com/lottamob
 ---
