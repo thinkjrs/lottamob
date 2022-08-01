@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Lotta Moberg, PhD, CFA',
   headerTitle: '',
   description:
-    'My research and analysis synthesizes global economics, politics, and policy. I am a Founder and co-CIO of ViviFi Ventures.',
+    'I am a Founder and co-CIO of ViviFi Ventures, investing in cannabis companies. My research and analysis synthesizes global economics, politics, and policy.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://lottamoberg.com',
