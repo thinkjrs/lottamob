@@ -46,6 +46,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "12.0.7",
     "@svgr/webpack": "^6.1.2",
+    "cheerio": "1.0.0-rc.12",
     "cross-env": "^7.0.3",
     "dedent": "^0.7.0",
     "eslint": "^7.29.0",
@@ -56,11 +57,19 @@
     "globby": "11.0.3",
     "husky": "^6.0.0",
     "inquirer": "^8.1.1",
+    "jsdom": "22",
+    "jszip": "^3.10.1",
     "lint-staged": "^11.0.0",
     "next-remote-watch": "^1.0.0",
     "prettier": "2.2.1",
+    "rehype-parse": "^9.0.1",
+    "rehype-remark": "^10.0.1",
+    "remark-mdx": "^3.1.0",
+    "remark-stringify": "^11.0.0",
+    "slugify": "^1.6.6",
     "socket.io": "^4.1.3",
-    "socket.io-client": "^4.1.3"
+    "socket.io-client": "^4.1.3",
+    "unified": "^11.0.5"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
@@ -69,5 +78,8 @@
     "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
       "prettier --write"
     ]
+  },
+  "resolutions": {
+    "undici": "^5.28.4"
   }
 }
